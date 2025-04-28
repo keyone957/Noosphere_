@@ -44,13 +44,14 @@
 
 ### [구글 스프레드 시트를 이용한 게임 이벤트 관리]
 
-![image.png](image%201.png)
+![Image](https://github.com/user-attachments/assets/cd88a576-5cff-440c-8d4e-f42be3c9e403)
 
 =⇒ 이벤트 동작 방식 플로우 차트 
 
-![image.png](image%202.png)
+![Image](https://github.com/user-attachments/assets/690efdab-3a76-416d-8f09-22624046cb4a)
 
-![image.png](image%203.png)
+
+![Image](https://github.com/user-attachments/assets/ab92bbe9-3487-49a5-b609-143161d5dc4f)
 
 ⇒ 구글 스프레드시트를 이용하여 다른 부서와 개발자 사이의 협업을 원활하게 진행
 
