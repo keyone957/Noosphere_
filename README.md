@@ -105,11 +105,11 @@
 
 ### [연출]
 
-![컷씬연출.gif](%25EC%25BB%25B7%25EC%2594%25AC%25EC%2597%25B0%25EC%25B6%259C.gif)
+<img src="https://github.com/user-attachments/assets/f7cfd1eb-25e3-4c7b-97fb-82a3972fe788"  width="574" height="358"/>
 
 게임 플레이 도중 컷씬을 실행 시키는 연출
 
-![감금연출.gif](%25EA%25B0%2590%25EA%25B8%2588%25EC%2597%25B0%25EC%25B6%259C.gif)
+<img src="https://github.com/user-attachments/assets/417c3369-3b7a-40b5-a943-0ed2f93b044d"  width="574" height="358"/>
 
 카메라를 흔드는 연출
 
