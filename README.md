@@ -114,8 +114,8 @@
 카메라를 흔드는 연출
 
 <p align="center">
-  <img src="/mnt/data/f7f316e7-43e3-4ffc-80f7-5c495df181c9.png" width="300"/>
-  <img src="/mnt/data/f7f316e7-43e3-4ffc-80f7-5c495df181c9.png" width="300"/>
+  <img src="https://github.com/user-attachments/assets/f30dcc2b-2e37-4d30-a2e6-30c13c449e8f" width="400" height="300"/>
+  <img src="https://github.com/user-attachments/assets/16a6e5f5-98aa-40af-b5a6-909dcbe8d9c9" width="400" height="300"/>
 </p>
 
 NPC에 따른 고유한 카메라 위치 이동 연출
