@@ -116,7 +116,7 @@
 
 카메라를 흔드는 연출
 
-<p align="center">
+<p align="left">
   <img src="https://github.com/user-attachments/assets/f30dcc2b-2e37-4d30-a2e6-30c13c449e8f" width="400" height="300"/>
   <img src="https://github.com/user-attachments/assets/16a6e5f5-98aa-40af-b5a6-909dcbe8d9c9" width="400" height="300"/>
 </p>
