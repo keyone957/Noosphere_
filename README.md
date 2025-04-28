@@ -21,7 +21,7 @@
 
 ---
 
-![image.png](image.png)
+![Image](https://github.com/user-attachments/assets/e2220397-9438-43ab-9d71-c634e22450b6)
 
 ## 나의 역할
 
