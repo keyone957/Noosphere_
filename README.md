@@ -74,7 +74,7 @@
 
 특정한 위치 or 조건을 충족하여 상호작용하면 다양한 이벤트가 실행이 된다.  
 
-![능력사용.gif](%25EB%258A%25A5%25EB%25A0%25A5%25EC%2582%25AC%25EC%259A%25A9.gif)
+![Image](https://github.com/user-attachments/assets/e2045f56-3ba2-4ff8-b95e-742331f66675)
 
 능력을 사용하여 정신세계로 진입.
 
@@ -96,7 +96,7 @@
 
 올바른 순서로 책을 배치하여 정답을 맞춘다
 
-![거울기믹.gif](%25EA%25B1%25B0%25EC%259A%25B8%25EA%25B8%25B0%25EB%25AF%25B9.gif)
+![Image](https://github.com/user-attachments/assets/04b981eb-41b5-4d5c-b8cf-e1397ea7cc11)
 
 각종 기믹들을 풀고 맵 내에 숨겨진 거울 조각을 획득하고 올바른 위치에 조각을 배치하여 정답을 맞춘다
 
