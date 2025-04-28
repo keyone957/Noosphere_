@@ -60,10 +60,13 @@
 - 기획자가 실시간으로 스프레드시트를 수정하면 바로 게임에 적용되게 구현하였습니다
 - 모든 게임에 필요한 데이터(이벤트, 기믹, 증거물 상세 정보 및 속성, 대화, 소리, 사진 등…)를 모두 스프레드시트로 관리하여 다른 부서 간 협업이 원활하게 진행되도록 하였습니다.
 - Eventmanager.cs
+
   [Eventmanager.cs](https://github.com/keyone957/Noosphere_/blob/main/Assets/02.Scripts/Manager/EventManager.cs)
     
 - EventTrigger.cs
+
   [EventTrigger.cs](https://github.com/keyone957/Noosphere_/blob/main/Assets/00.Test/YoonKyoungMin/Scripts/EventTriggers/EventTrigger.cs)
+  
 ## 개발 내용 및 플레이 영상
 
 ---
