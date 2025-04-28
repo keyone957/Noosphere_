@@ -1,0 +1,12 @@
+,
+,
+,
+,
+,
+lock_condition_id,condition_description
+lock_condition_001,캐릭터 움직임 + 모든 물체 및 캐릭터 상호작용
+lock_condition_002,캐릭터 움직임
+lock_condition_003,모든 물체 및 캐릭터 상호작용
+lock_condition_004,정신세계 입장
+lock_condition_005,현실세계 돌아오기
+lock_condition_006,상호작용 강제 종료

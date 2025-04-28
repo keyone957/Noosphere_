@@ -1,0 +1,16 @@
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+effect_id,effect_name,description,artresource_id,soundresource_id
+effect_001,위치 이동 포인트,캐릭터가 연구원 앞까지 이동할 수 있도록 포인트,artresource_0001,
+effect_002,정신세계 게이지,첫 클릭 시 정신세계 진입 게이지,artresource_0002,
+effect_003,게이지 차는 효과,게이지 차는 효과,artresource_0003,
+effect_004,정신세계 이동 효과,정신세계 진입 효과,artresource_0004,
+effect_005,노이즈,닥터가 무언가를 통해 보고 있다는 느낌을 주기 위한 지지직 소리,,soundresource_001
+effect_006,타이핑 UI,튜토리얼 정답을 누르기 위한 타이핑 UI,artresource_0006,
+effect_007,문 열림,튜토리얼 방 문 열림,,
+effect_008,,,,
+effect_009,,,,
+effect_010,,,,

@@ -1,0 +1,30 @@
+"Event_뒤의 알파벳은 순서대로 A,B,C···순으로 진행되며 각각 튜토리얼, Stage1, Stage2··· 순임을 밝힌다.",,,,,,,,,,,,,
+repeat_type : 반복 여부 false true,,,,"result_type : 이벤트의 결과로 effect, dialogue로 진행",,,,lock_condition : 이벤트 진행 시 락되는 조건들,,,,,
+"condition_type : or은 조건없이 진행, and 는 뒤 해당 조건들을 클리어 시 진행 가능",,,,evidence_id : 관련 증거물 아이디,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+event_id,description,repeat_Type,condition_Type,condition1,conditon2,condition3,result_id_1,result_id_2,result_id_3,evidence_id,lock_condition_id,location_id,next_Event_id
+Event_A001,게임 시작 시,FALSE,or,,,,dialogue_0001,,,,lock_condition_001,location_1,Event_A002
+Event_A002,연구원 앞까지 이동,FALSE,or,,,,effect_001,,,,lock_condition_002,location_1,Event_A003
+Event_A003,연구원 앞 도착,FALSE,or,,,,dialogue_0007,,,,lock_condition_001,location_1,Event_A004
+Event_A004,대화 듣고 스페이스 바 누를 때,FALSE,or,,,,dialogue_0008,effect_002,,,lock_condition_001,location_1,Event_A005
+Event_A005,연구원의 연구실(정신) 진입 시,FALSE,or,,,,effect_003,effect_004,,,lock_condition_001,location_1,Event_A006
+Event_A006,연구원의 연구실(정신) 입장 시,FALSE,or,,,,dialogue_0009,effect_005,,,lock_condition_001,location_2,Event_A007
+Event_A007,연구 일지(정신) 클릭 시,FALSE,or,,,,,,,evidence_001,,location_2,Event_A008
+Event_A008,연구 일지(정신) 닫을 시,FALSE,or,,,,dialogue_0010,,,,,location_2,Event_A009
+Event_A009,연구원의 연구실(현실) 진입 시,FALSE,and,evidence_001,,,effect_002,effect_003,effect_004,,lock_condition_001,location_2,Event_A010
+Event_A010,연구원의 연구실(현실) 입장 시,FALSE,or,,,,dialogue_0011,,,,lock_condition_001,location_1,Event_A011
+Event_A011,닥터에게 상호작용 시,TRUE,or,,,,dialogue_0012,effect_006,,,lock_condition_001,location_1,
+Event_A012,연구원 이름 -오답,TRUE,or,,,,dialogue_0013,,,,,location_1,
+Event_A013,연구원 이름 - 정답,FALSE,and,dialogue_0015,,,dialogue_0014,effect_007,,,,location_1,
+Event_A014,정답 없이 밖으로 나가려고 문에 상호작용 시,TRUE,or,,,,dialogue_0016,,,,,location_1,
+Event_A015,연구 일지(현실) 클릭 시,FALSE,or,,,,,,,evidence_002,,location_1,
+Event_A016,사물함(현실) 클릭 시,FALSE,or,,,,,,,,,location_1,
+Event_A017,사물함(정신) 클릭 시 - 펜던트 없을 때,TRUE,or,,,,dialogue_0017,,,,,location_2,
+Event_A018,사물함(정신) 클릭 시 - 펜던트 있을 때,FALSE,and,evidence_003,,,dialogue_0018,,,evidence_007,,location_2,
+Event_A019,옷걸이(현실) 클릭 시,FALSE,or,,,,,,,evidence_004,,location_1,
+Event_A020,책장(현실) 클릭 시,FALSE,or,,,,,,,evidence_005,,location_1,
+Event_A021,책장(정신) 클릭 시,FALSE,or,,,,,,,evidence_006,,location_2,
+Event_A022,벽면(정신) 클릭 시,FALSE,or,,,,,,,evidence_009,,location_2,
+Event_A023,evidence_008 열람 시 - 처음,FALSE,or,,,,dialogue_0019,,,evidence_008,lock_condition_006,,Event_A024
+Event_A024,evidence_008 열람 시 - 2회 이상,TRUE,or,,,,dialogue_0020,,,,lock_condition_006,,

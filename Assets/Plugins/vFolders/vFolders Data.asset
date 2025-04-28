@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb9c12a8c6c949f7af83a3d238359d0, type: 3}
+  m_Name: vFolders Data
+  m_EditorClassIdentifier: 
+  folderDatas_byGuid:
+    keys:
+    - f0e2ee2111c737b49aae6c180e0569ca
+    - 3e9325f33db4e374e81341723fd249ce
+    - 3cce8ff56e9a52b488a4b63923339165
+    - f302d50da186d5f4ab3441c8ff211f8c
+    - d9379ca74be765545ac4fea21e7f5c8b
+    - ae69ffa37dc5a974e85e5826a351bff5
+    - 45d2ded7cd34111409a9141c718afe26
+    - 7dfb0b1cea1bd6540be727ceadde98c4
+    - e82008f21bc7fc94c93521062af9e288
+    - e8f4a2f6bf123934a87dd5e8b28dc1b0
+    - eaf1c977e2152084c883dd8dd73880b3
+    - e80725cc1990dd34c92a7250dc451675
+    - 6cebb6b359021dc448dc3c6385d348b5
+    - fde708a2c4169864b9ac407ecbe7fb6e
+    - e2a6461351d0b5e4a85dff4195b6de9d
+    - ac65556539ff96344b3fa9f6721ef914
+    values:
+    - colorIndex: 2
+      iconNameOrGuid: SceneAsset Icon
+    - colorIndex: 3
+      iconNameOrGuid: cs Script Icon
+    - colorIndex: 4
+      iconNameOrGuid: Prefab Icon
+    - colorIndex: 4
+      iconNameOrGuid: PrefabModel Icon
+    - colorIndex: 6
+      iconNameOrGuid: Material Icon
+    - colorIndex: 7
+      iconNameOrGuid: Shader Icon
+    - colorIndex: 9
+      iconNameOrGuid: AnimatorController Icon
+    - colorIndex: 10
+      iconNameOrGuid: AudioClip Icon
+    - colorIndex: 1
+      iconNameOrGuid: Font Icon
+    - colorIndex: 2
+      iconNameOrGuid: RawImage Icon
+    - colorIndex: 3
+      iconNameOrGuid: Settings Icon
+    - colorIndex: 4
+      iconNameOrGuid: Terrain Icon
+    - colorIndex: 1
+      iconNameOrGuid: 
+    - colorIndex: 8
+      iconNameOrGuid: MeshCollider Icon
+    - colorIndex: 5
+      iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 

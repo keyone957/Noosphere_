@@ -1,0 +1,26 @@
+acquisition_Type : 유저의 인벤토리에 들어갈 수 있는가 없는가 Y or N,,,,,
+unlock_Condition : 언락 조건,,,,,
+,,,,,
+,,,,,
+,,,,,
+evidence_id,evidence_name,acquisition_Type,unlock_Condition,evidence_Text_Display,artresource_id
+evidence_001,연구원의 연구일지1(정신),Y,Event_A006,연구일지가 적혀있는 글이다,artresource_0005
+evidence_002,연구원의 연구일지1(현실),Y,,연구일지가 적혀있는 글이다,artresource_0007
+evidence_003,가족 사진이 담긴 펜던트1(현실),Y,,소중한 사진이 담겨있는 펜던트,artresource_0008
+evidence_004,카드 키1(현실),Y,,아이디가 적혀 있는 카드 키,artresource_0009
+evidence_005,실험체 목록1(현실),Y,,실험체 정보가 적혀있는 듯하다.,artresource_0010
+evidence_006,편지1(정신),Y,,무언가 적혀있는 편지다.,artresource_0011
+evidence_007,일기1(정신),Y,,누군가의 일기장이다.,artresource_0012
+evidence_008,사진1(정신),N,,,artresource_0013
+evidence_009,신문 기사1(정신),N,,연구소의 사진,artresource_0014
+evidence_010,,,,,
+evidence_011,,,,,
+evidence_012,,,,,
+evidence_013,,,,,
+evidence_014,,,,,
+evidence_015,,,,,
+evidence_016,,,,,
+evidence_017,,,,,
+evidence_018,,,,,
+evidence_019,,,,,
+evidence_020,,,,,
