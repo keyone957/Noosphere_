@@ -75,7 +75,7 @@
 
 특정한 위치 or 조건을 충족하여 상호작용하면 다양한 이벤트가 실행이 된다.  
 
-![Image](https://github.com/user-attachments/assets/e2045f56-3ba2-4ff8-b95e-742331f66675)
+<img src="https://github.com/user-attachments/assets/e2045f56-3ba2-4ff8-b95e-742331f66675"  width="574" height="358"/>
 
 능력을 사용하여 정신세계로 진입.
 
