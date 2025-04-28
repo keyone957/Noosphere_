@@ -70,7 +70,7 @@
 
 ### [기본 시스템]
 
-![증거물획득.gif](%25EC%25A6%259D%25EA%25B1%25B0%25EB%25AC%25BC%25ED%259A%258D%25EB%2593%259D.gif)
+![Image](https://github.com/user-attachments/assets/c6e63205-8d3a-4c1b-b738-f2b764e78b7c)
 
 특정한 위치 or 조건을 충족하여 상호작용하면 다양한 이벤트가 실행이 된다.  
 
