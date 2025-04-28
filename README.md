@@ -2,21 +2,20 @@
 
 진행 기간: 2024. 09 ~ 진행 중
 
-
 사용한 기술 스택: C#, Unity
+
 개발 인원(역할): 개발자 2명 + 기획자 2명 + 디자이너 1명 + 사운드 1명
+
 한 줄 설명: 3D 추리 게임
+
 비고: 팀 프로젝트/최우수상 수상작 / 진행중인 프로젝트
 
 ## 게임 플레이 풀 영상
 
 ---
 
-[https://www.youtube.com/watch?v=5mgx3IzGAn8](https://www.youtube.com/watch?v=5mgx3IzGAn8)
+[게임 플레이 풀영상](https://www.youtube.com/watch?v=5mgx3IzGAn8)
 
-- 깃허브
-
-[https://github.com/keyone957/Noosphere_](https://github.com/keyone957/Noosphere_)
 
 ## 프로젝트 소개
 
@@ -60,130 +59,10 @@
 - 기획자가 실시간으로 스프레드시트를 수정하면 바로 게임에 적용되게 구현하였습니다
 - 모든 게임에 필요한 데이터(이벤트, 기믹, 증거물 상세 정보 및 속성, 대화, 소리, 사진 등…)를 모두 스프레드시트로 관리하여 다른 부서 간 협업이 원활하게 진행되도록 하였습니다.
 - Eventmanager.cs
-  https://github.com/keyone957/Noosphere_/blob/main/Assets/02.Scripts/Manager/EventManager.cs
+  [Eventmanager.cs](https://github.com/keyone957/Noosphere_/blob/main/Assets/02.Scripts/Manager/EventManager.cs)
     
 - EventTrigger.cs
-    
-    ```csharp
-    using System.Collections;
-    using System.Collections.Generic;
-    using Cysharp.Threading.Tasks;
-    using UnityEngine;
-    using Debug = NooSphere.Debug;
-    
-    public class EventTrigger : MonoBehaviour
-    {
-        [Header("이벤트 목록")]
-        public List<string> eventIdList = new List<string>();
-        private EventStructure _curEvent;
-        [Space(5)] [Header("트리거 설정")] 
-        [SerializeField] private bool _canDestroy = false;
-        [Space(5)][Header("NPC 관련")]
-        public GameObject npcCameraPoint;
-        public bool isNpc;
-        
-        
-        //플레이어가 트리거 내에 진입한다면
-        protected void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Player") && PlayerInteract.Instance.canInteract)
-            {
-                CheckTriggerAvail();
-                PlayerInteract.Instance.isInsideTrigger = true;
-                PlayerInteract.Instance.curTrigger = this;
-                
-                if (isNpc)
-                {
-                    PlayerController.Instance.npcCam = npcCameraPoint;
-                    PlayerController.Instance.npcState = transform.GetChild(0).GetComponent<NpcState>();
-                }
-            }
-        }
-        
-        //플레이어가 트리거 내에서 나간다면
-        protected void OnTriggerExit(Collider other)
-        {
-            //플레이어에게 ? 없애기
-            PlayerInteract.Instance.HideInteractionMark();
-            PlayerInteract.Instance.isInsideTrigger = false;
-            PlayerInteract.Instance.curTrigger = null;
-            
-            //현재 이벤트 초기화하기
-            _curEvent = null;
-            
-            //npc 변수 초기화
-            PlayerController.Instance.npcCam = null;
-            PlayerController.Instance.npcState = null;
-            
-            //플레이어에게 할당된 액션 다 초기화
-            PlayerInteract.Instance.OnInteract = null;
-            PlayerInteract.Instance.OnMentalInteract = null;
-        }
-    
-        public void CheckTriggerAvail()
-        {
-            bool canExecute = false;
-            foreach (var eventID in eventIdList)
-            {
-                if (EventManager.Instance.CheckExecutable(eventID))
-                {
-                    _curEvent = DataManager.Instance._events[eventID];
-                    canExecute = true;
-                    break;
-                }
-            }
-    
-            if (canExecute)
-            {
-                string[] results = EventManager.Instance.CheckConditions(_curEvent);
-    
-                //결과 실행
-                if (results != null && results.Length > 0)
-                {
-                    if (!EventManager.Instance.IsConditionMet() &&
-                        string.IsNullOrEmpty(_curEvent.conditionFalseResults[0]))
-                    {
-                        Debug.LogWarning($"{_curEvent.eventId}는 조건을 만족하지 못했으나 conditionFalseResult도 존재하지 않아 할당하지 않음");
-                        return;
-                    }
-                    //트리거 종류에 따라 할당하기
-                    switch (tag)
-                    {
-                        case "EventTrigger":
-                            //바로 실행 메소드 호출
-                            EventManager.Instance.ExecuteEvent(_curEvent.eventId).Forget();
-                            Debug.Log("바로 실행");
-                            break;
-                        case "EventInteractionTrigger":
-                            //플레이어에게 ? 띄우기
-                            PlayerInteract.Instance.ShowInteractionMark();
-                            PlayerInteract.Instance.OnInteract = null;
-                            Debug.Log("OnInteract 할당");
-                            //플레이어의 OnInteract 액션에 실행 메소드 할당
-                            PlayerInteract.Instance.OnInteract += () =>
-                            {
-                                EventManager.Instance.ExecuteEvent(_curEvent.eventId).Forget();
-                            };
-                            break;
-                        case "EventMentalEnterTrigger":
-                            //플레이어에게 ? 띄우기
-                            PlayerInteract.Instance.ShowInteractionMark();
-                            PlayerInteract.Instance.OnMentalInteract = null;
-                            Debug.Log("OnMentalInteract에 할당");
-                            //정신세계 진입 프로세스의 OnInteract 액션에 실행 메소드 할당
-                            PlayerInteract.Instance.OnMentalInteract += () =>
-                            {
-                                EventManager.Instance.ExecuteEvent(_curEvent.eventId).Forget();
-                            };
-                            break;
-                    }
-                }
-            }
-        }
-    }
-    ```
-    
-
+  [EventTrigger.cs](https://github.com/keyone957/Noosphere_/blob/main/Assets/00.Test/YoonKyoungMin/Scripts/EventTriggers/EventTrigger.cs)
 ## 개발 내용 및 플레이 영상
 
 ---
