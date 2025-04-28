@@ -70,7 +70,8 @@
 
 ### [기본 시스템]
 
-![Image](https://github.com/user-attachments/assets/c6e63205-8d3a-4c1b-b738-f2b764e78b7c)
+<img src="https://github.com/user-attachments/assets/c6e63205-8d3a-4c1b-b738-f2b764e78b7c"  width="574" height="358"/>
+
 
 특정한 위치 or 조건을 충족하여 상호작용하면 다양한 이벤트가 실행이 된다.  
 
