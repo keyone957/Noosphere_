@@ -79,25 +79,27 @@
 
 능력을 사용하여 정신세계로 진입.
 
-![Image](https://github.com/user-attachments/assets/b0f03721-2dca-4028-95dd-974ab752c367)
+<img src="https://github.com/user-attachments/assets/b0f03721-2dca-4028-95dd-974ab752c367"  width="574" height="358"/>
+
 
 인벤토리를 열어 게임 플레이 도중 얻은 증거물을 상세하게 살펴보거나 특정 위치에서 사용할 수 있다.
 
 ### [기믹]
 
-![라디오기믹.gif](%25EB%259D%25BC%25EB%2594%2594%25EC%2598%25A4%25EA%25B8%25B0%25EB%25AF%25B9.gif)
+<img src="https://github.com/user-attachments/assets/cbf6ce28-d7b3-441a-9713-436c2a536e58"  width="574" height="358"/>
+
 
 올바른 주파수를 입력하여 정답을 맞춘다.
 
-![벽시계.gif](%25EB%25B2%25BD%25EC%258B%259C%25EA%25B3%2584.gif)
+<img src="https://github.com/user-attachments/assets/efd1e750-d6a9-4478-a926-8cd3dffc50a8"  width="574" height="358"/>
 
 올바른 시간을 맞춰서 정답을 맞춘다
 
-![책장기믹.gif](%25EC%25B1%2585%25EC%259E%25A5%25EA%25B8%25B0%25EB%25AF%25B9.gif)
+<img src="https://github.com/user-attachments/assets/c2adafe9-4559-4346-a11f-e663dd01e431"  width="574" height="358"/>
 
 올바른 순서로 책을 배치하여 정답을 맞춘다
 
-![Image](https://github.com/user-attachments/assets/04b981eb-41b5-4d5c-b8cf-e1397ea7cc11)
+<img src="https://github.com/user-attachments/assets/04b981eb-41b5-4d5c-b8cf-e1397ea7cc11"  width="574" height="358"/>
 
 각종 기믹들을 풀고 맵 내에 숨겨진 거울 조각을 획득하고 올바른 위치에 조각을 배치하여 정답을 맞춘다
 
@@ -111,9 +113,10 @@
 
 카메라를 흔드는 연출
 
-![new.mp4_20250309_154140.gif](new.mp4_20250309_154140.gif)
-
-![카메라 연출.mp4_20250309_154301.gif](%EC%B9%B4%EB%A9%94%EB%9D%BC_%EC%97%B0%EC%B6%9C.mp4_20250309_154301.gif)
+<p align="center">
+  <img src="/mnt/data/f7f316e7-43e3-4ffc-80f7-5c495df181c9.png" width="300"/>
+  <img src="/mnt/data/f7f316e7-43e3-4ffc-80f7-5c495df181c9.png" width="300"/>
+</p>
 
 NPC에 따른 고유한 카메라 위치 이동 연출
 
