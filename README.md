@@ -112,7 +112,7 @@
 
 게임 플레이 도중 컷씬을 실행 시키는 연출
 
-<img src="https://github.com/user-attachments/assets/417c3369-3b7a-40b5-a943-0ed2f93b044d"  width="574" height="358"/>
+<img src="https://github.com/user-attachments/assets/2e57a9c8-aa9a-4b05-95af-ecf7bd97301a"  width="574" height="358"/>
 
 카메라를 흔드는 연출
 
