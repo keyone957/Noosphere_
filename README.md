@@ -16,6 +16,8 @@
 
 [게임 플레이 풀영상](https://www.youtube.com/watch?v=5mgx3IzGAn8)
 
+[게임 트레일러 영상](https://youtu.be/XdEZNaAy4jw?si=auye50-PDBeIfqMf)
+
 
 ## 프로젝트 소개
 
