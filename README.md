@@ -15,7 +15,7 @@
 ---
 [스팀 링크 (데모)](https://store.steampowered.com/app/3618090/Noosphere/)&nbsp; &nbsp; &nbsp;[스팀 링크](https://store.steampowered.com/app/3618090/Noosphere/)
 
-[게임 플레이 풀영상](https://www.youtube.com/watch?v=5mgx3IzGAn8)
+[게임 플레이 풀영상](https://www.youtube.com/watch?v=BJhUm7ZLg7I)
 
 [게임 트레일러 영상](https://youtu.be/XdEZNaAy4jw?si=auye50-PDBeIfqMf)
 
