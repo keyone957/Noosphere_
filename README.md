@@ -1,6 +1,6 @@
 # NoosPhere
 
-진행 기간: 2024. 09 ~ 진행 중
+진행 기간: 2024. 09 ~ 2025. 12
 
 사용한 기술 스택: C#, Unity
 
@@ -8,12 +8,12 @@
 
 한 줄 설명: 3D 추리 게임
 
-비고: 팀 프로젝트/최우수상 수상작 / 진행중인 프로젝트
+비고: 팀 프로젝트/최우수상 수상작
 
 ## 게임 플레이 풀 영상
 
 ---
-[스팀 링크 (데모)](https://store.steampowered.com/app/3618090/Noosphere/)&nbsp; &nbsp; &nbsp;[스팀 링크](https://store.steampowered.com/app/3618090/Noosphere/)
+[스팀 링크](https://store.steampowered.com/app/3618090/Noosphere/)
 
 [게임 플레이 풀영상](https://www.youtube.com/watch?v=BJhUm7ZLg7I)
 
