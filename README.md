@@ -79,7 +79,7 @@
     
 - EventTrigger.cs
 
-  [EventTrigger.cs](https://github.com/keyone957/Noosphere_/blob/main/Assets/00.Test/YoonKyoungMin/Scripts/EventTriggers/EventTrigger.cs)
+  [EventTrigger.cs](https://github.com/keyone957/Noosphere_/blob/main/Assets/02.Scripts/Manager/EventTrigger.cs)
   
 ## 개발 내용 및 플레이 영상
 
