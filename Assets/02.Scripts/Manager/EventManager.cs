@@ -1,11 +1,35 @@
-using System;
+﻿using Cysharp.Threading.Tasks;
 using System.Collections;
-using System.Collections.Generic;
-using Cysharp.Threading.Tasks;
+using System.IO;
+using System.Threading.Tasks;
+using NooSphere;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Debug = NooSphere.Debug;
 
-public class EventManager : Singleton<EventManager>
+public class EventManager : MonoBehaviour
 {
+    public static EventManager Instance { get; private set; }
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
     //스테이지 번호
     public enum ChapterInfo
     {
@@ -23,34 +47,77 @@ public class EventManager : Singleton<EventManager>
     }
     public RoomInfo curRoomInfo;
     public ChapterInfo curChapterInfo;
-    
+
     //다음 이벤트 정보
     public string startEventID;
     public string currentEventID;
     public string nextEventID = "";
-    
+
     //이벤트 성공 여부 
     private bool _isEventSuccess = false;
     private bool _isQuizSolved = true;
     [SerializeField] private bool _isRepeatFalse = false;
     [SerializeField] private bool _isConditionMet = false;
-    
-    void Awake()
+
+    //자동저장 딜레이 시간
+    [SerializeField] private float _autoSaveDelayTime = 2.5f;
+
+    //플레이어 프리팹
+    [SerializeField] private GameObject _player;
+
+    //이벤트 세팅 완료 flag
+    private bool _isEventSetupComplete = false;
+
+    void InitState()
     {
+        Debug.LogWarning("이벤트 매니저 초기화");
         //게임 시작 시, 스테이지 정보 초기화
-        curChapterInfo = ChapterInfo.Prologue;
-        curRoomInfo = RoomInfo.Room_101;
-        nextEventID = startEventID;
+        curChapterInfo = (ChapterInfo)InventoryManager.Instance.currentViewChapter;
+        if (FindObjectOfType<RoomInfoManager>() is RoomInfoManager roomInfoManager)
+        {
+            curRoomInfo = roomInfoManager.roomInfo;
+        }
+
+        // 경로 설정
+        string folderPath = Path.Combine(Application.persistentDataPath, "Saves");
+        int selectSlotIndex = NooSphere.SaveManager.Instance.selectSlotIndex;
+        string filePath = Path.Combine(folderPath, $"slot{selectSlotIndex}.es3");
+        
+        // 이벤트 상태 초기화
+        currentEventID = ES3.Load<string>("CurrentEventID", filePath);
+        nextEventID = ES3.Load<string>("NextEventID", filePath);
+
+        // 플레이어 위치, 회전 초기화
+        SetPlayerPosFromSaveData();
+
+        // 카메라 초기화
+        if(FindAnyObjectByType<AssignPlayer>() is AssignPlayer assignPlayer)
+        {
+            //assignPlayer.DoAssign();
+        }
+
+        // 정신세계 진입 상태 초기화
+        MentalEnterProcess mentalInfo = PlayerController.Instance.GetComponent<MentalEnterProcess>();
+        mentalInfo.SetCombackEventId(ES3.Load<string>("CombackEventID", filePath));
+        PlayerInteract.Instance.isInMental = ES3.Load<bool>("IsInMental", filePath);
+        mentalInfo.mentalInfo = ES3.Load<MentalStructure>("MentalInfo", filePath);
+
+        // 이어하기 모든 단계 완료, 로드 상태 NewGame으로 초기화
+        //NooSphere.SaveManager.Instance.SetLoadType(NooSphere.GameLoadType.NewGame);
+        NooSphere.SaveManager.Instance.SetSlotIndex(-1);
+
+        // 인벤토리 설정
+        InventoryManager.Instance.LoadInventoryData();
+
+        PlayerController.Instance.canMove = true;
+
+        StartCoroutine(CompleteLoad());
     }
 
-    void Start()
-    {
-        ExecuteEvent(startEventID).Forget();
-    }
- 
     //현재 실행될 수 있는 이벤트인지 검사 -> 실행 가능하다면 플레이어에게 ? 띄우기
     public bool CheckExecutable(string eventID)
     {
+        if (string.IsNullOrEmpty(eventID)) return false;
         //변수 초기화
         _isRepeatFalse = false;
         
@@ -194,8 +261,6 @@ public class EventManager : Singleton<EventManager>
                 await DoResult(results);
             }
             
-            Debug.LogWarning($"{eventID} 이벤트의 repeatType {_event.repeatType} , isExecuted : {_event.isExecuted}");
-            
             //이벤트가 성공적으로 실행이 되었다고
             if (!_isRepeatFalse && _isConditionMet)
             {
@@ -212,11 +277,10 @@ public class EventManager : Singleton<EventManager>
                     {
                         await AcquireEvidence(_event, _event.evidenceId);
                         Debug.LogWarning($"{_event.evidenceId} 증거물 획득 다 실행 됨.");
+                        _isEventSuccess = true;
                     }
                 }
             }
-
-            Debug.LogWarning($"{eventID} 이벤트의 repeatType {_event.repeatType} , isExecuted : {_event.isExecuted}");
             
             if (_isEventSuccess)
             {
@@ -229,13 +293,25 @@ public class EventManager : Singleton<EventManager>
                 }
                 //예외처리
                 if(currentEventID == "Event_B044") return;
+                //예외처리 - 친구에게 편지 주면 더이상 상호작용하지 못하도록
+                if (currentEventID == "Event_C066")
+                {
+                    DataManager.Instance._events["Event_C082"].repeatType = false;
+                }
             }
             else
             {
-                CloseEventFailure(_event);
+                if (currentEventID == "Event_D099" || currentEventID == "Event_D100")
+                {
+                    CloseEventSuccess(_event);
+                }
+                else
+                {
+                    CloseEventFailure(_event);
+                }
             }
             
-            Debug.LogWarning($"{eventID} 이벤트의 repeatType {_event.repeatType} , isExecuted : {_event.isExecuted}");
+            //Debug.LogWarning($"{eventID} 이벤트의 repeatType {_event.repeatType} , isExecuted : {_event.isExecuted}");
 
             if (_isEventSuccess)
             {
@@ -243,7 +319,7 @@ public class EventManager : Singleton<EventManager>
                 {
                     if (DataManager.Instance._events[nextEventID].isAuto)
                     {
-                        ExecuteEvent(nextEventID).Forget();
+                        await ExecuteEvent(nextEventID);
                     }
                 }
             }
@@ -251,7 +327,25 @@ public class EventManager : Singleton<EventManager>
             //현재 위치한 곳에 트리거가 있다면 해당 트리거 실행 가능한지 다시 체크
             if (PlayerInteract.Instance.isInsideTrigger && PlayerInteract.Instance.curTrigger != null)
             {
-                PlayerInteract.Instance.curTrigger.CheckTriggerAvail();
+                await Task.Delay(100);
+                if (PlayerInteract.Instance.isInsideTrigger && PlayerInteract.Instance.curTrigger != null)
+                {
+                    bool canCheck = false;
+                    foreach (var EVENTID in PlayerInteract.Instance.curTrigger.GetComponent<EventTrigger>().eventIdList)
+                    {
+                        if (!DataManager.Instance._events[EVENTID].repeatType && DataManager.Instance._events[EVENTID].isExecuted)
+                        {
+                            canCheck = false;
+                            continue;
+                        }
+
+                        canCheck = true;
+                        break;
+                    }
+                    if(!canCheck) return;
+                    if(currentEventID == "Event_D090") return;
+                    PlayerInteract.Instance.curTrigger.OnTriggerEnter(PlayerInteract.Instance.GetComponent<CapsuleCollider>());
+                }
             }
         }
     }
@@ -286,6 +380,7 @@ public class EventManager : Singleton<EventManager>
                     // 효과가 끝날 때까지 대기
                     await WaitForEffectEndAsync();
                     Debug.Log("#4-2 : " + resultID + " 효과 끝");
+                    if (resultID == "Effect_048") _isEventSuccess = true;
                 }
                 else if (resultType == "Quiz")
                 {
@@ -303,6 +398,11 @@ public class EventManager : Singleton<EventManager>
                     else
                     {
                         await QuizManager.Instance.DoWrongResult(quizStructure);
+                        if (quizStructure.quizId == "Quiz_009")
+                        {
+                            _isQuizSolved = true;
+                            return;
+                        }
                         _isQuizSolved = false;
                     }
                 }
@@ -362,8 +462,18 @@ public class EventManager : Singleton<EventManager>
         if (_evidence.CanAcquireEvidence())
         {
             //거울 조각이면 유리 UI에 반영하기
-            if (evidenceID == "Evidence_019" || evidenceID == "Evidence_023")
+            if (evidenceID == "Evidence_023")
             {
+                return;
+            }
+
+            if (evidenceID == "Evidence_020" || evidenceID == "Evidence_021" ||
+                evidenceID == "Evidence_022" || evidenceID == "Evidence_019")
+            {
+                DialogueManager.Instance.SetDialogue("Dialogue_0065");
+                _evidence.AcquireEvidence();
+                MirrorPuzzleManager.Instance.GetMirrorPiece(evidenceID);
+                await UniTask.Yield();
                 return;
             }
             
@@ -405,12 +515,6 @@ public class EventManager : Singleton<EventManager>
                     Debug.LogWarning("Investigate UI에서 NO를 선택함.");
                 }
                 
-
-                if (evidenceID == "Evidence_020" || evidenceID == "Evidence_021" ||
-                    evidenceID == "Evidence_022")
-                {
-                    MirrorPuzzleManager.Instance.GetMirrorPiece(evidenceID);
-                }
                 
                 //습득할 수 있는 증거물의 이벤트 type이 true이고 repeat fasle result가 없으면 repeatType을 false로 변경
                 if (_event.repeatType && _evidence.acquisitionType == 'Y' && string.IsNullOrEmpty(_event.repeatFalseResult))
@@ -442,6 +546,7 @@ public class EventManager : Singleton<EventManager>
             _isEventSuccess = false;
         }
     }
+
     //dialogue 시작
     void StartDialogue(string dialogueID)
     {
@@ -453,6 +558,14 @@ public class EventManager : Singleton<EventManager>
     void StartEffect(string effectID)
     {
         Debug.Log($"{effectID} 효과 시작");
+        if (effectID == "Effect_048")
+        {
+            DataManager.Instance._events["Event_D099"].isExecuted = true;
+        }
+        else if (effectID == "Effect_054")
+        {
+            DataManager.Instance._events["Event_D102"].isExecuted = true;
+        }
         EffectManager.Instance.SetEffect(effectID);
     }
     
@@ -484,11 +597,105 @@ public class EventManager : Singleton<EventManager>
             DataManager.Instance._lockConditions[_event.lockConditionId].UnLock();   
         }
         _event.isExecuted = true;
+        if (_event.eventId == "Event_D102")
+        {
+            Debug.LogWarning("[엔딩 2차 분기점]");
+            // 다프네에게 연구소 도면을 받았다면
+            if (DataManager.Instance._events["Event_B065"].isExecuted && InventoryManager.Instance.IsEvidenceInInventory("Evidence_016"))
+            {
+                Debug.LogWarning("[일반 엔딩] 탈출 성공");
+                DataManager.Instance._events["Event_D102"].nextEventId = "Event_D103";
+            }
+            else
+            {
+                Debug.LogWarning("[일반 엔딩] 탈출 실패");
+                DataManager.Instance._events["Event_D102"].nextEventId = "Event_D104";
+            }     
+        }
         nextEventID = _event.nextEventId;
+
+        // autoSave가 true라면, 자동 저장 진행
+        if (_event.autoSave && !_event.autoSaveComplete)
+        {
+            Debug.Log(_event.autoSaveDelay + "자동 저장 딜레이 옵션");
+            if (_event.autoSaveDelay == 2)
+            {
+                _event.autoSaveComplete = true;
+                StartCoroutine(DoAutoSaveDelay(_event));
+            }
+            else if(_event.autoSaveDelay != 1)
+            {
+                Debug.Log(_event.eventId + "자동 저장 실행");
+                NooSphere.SaveManager.Instance.SetSlotIndex(1);
+                _event.autoSaveComplete = true;
+                StartCoroutine(NooSphere.SaveManager.Instance.DoAutoSave());
+            }
+        }
     }
 
     public bool IsConditionMet()
     {
         return _isConditionMet;
+    }
+
+    IEnumerator DoAutoSaveDelay(EventStructure _event)
+    {
+        yield return new WaitForSecondsRealtime(_autoSaveDelayTime);
+        Debug.Log(_event.eventId + "자동 저장 딜레이 실행");
+        NooSphere.SaveManager.Instance.SetSlotIndex(1);
+        StartCoroutine(NooSphere.SaveManager.Instance.DoAutoSave());
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        var isEventScene = FindAnyObjectByType<IsEventScene>();
+        if (isEventScene == null || _isEventSetupComplete) return;
+        Debug.LogWarning("씬 로드 완료 - 이벤트 씬임!!" + scene.name);
+        if (NooSphere.SaveManager.Instance.CurrentLoadType == NooSphere.GameLoadType.NewGame)
+        {
+            Debug.LogWarning("이벤트 매니저 초기화 여기 실행 돼??" + NooSphere.SaveManager.Instance.CurrentLoadType);
+            curChapterInfo = ChapterInfo.Prologue;
+            curRoomInfo = RoomInfo.Room_101;
+            nextEventID = startEventID;
+
+            // 인벤토리 설정
+            InventoryManager.Instance.InitInventory();
+
+            ExecuteEvent(startEventID).Forget();
+            
+            // LoadComplete로 상태 변경해서 SetPlayerPos와 SetPlayerLoungePos에서
+            // 플레이어 위치 설정해주는 경우를 처음 이어하기 했을 때와 그 이후의 경우로 구분할 수 있도록 함.
+            NooSphere.SaveManager.Instance.SetLoadType(GameLoadType.LoadComplete);
+        }
+        else
+        {
+            InitState();
+        }
+        _isEventSetupComplete = true;
+    }
+
+    public void SetEventSetUpFlag(bool value)
+    {
+        _isEventSetupComplete = value;
+    }
+
+    
+    // SetPlayerPos와 SetPlayerLoungePos에서 이어하기 시, 플레이어 위치를 세이브 데이터의 위치로 설정하는 함수
+    void SetPlayerPosFromSaveData()
+    {
+        NooSphere.Debug.LogWarning("이어하기 시 실행되는 플레이어 위치 설정");
+        int selectSlotIndex = NooSphere.SaveManager.Instance.selectSlotIndex;
+        Instantiate(_player, NooSphere.SaveManager.Instance.GetPlayerTransform(selectSlotIndex).position, NooSphere.SaveManager.Instance.GetPlayerTransform(selectSlotIndex).rotation);
+        PlayerInteract.Instance.OnInteract = null;
+        PlayerInteract.Instance.OnEvidenceUse = null;
+        PlayerInteract.Instance.OnMentalInteract = null;
+        PlayerInteract.Instance.isInsideTrigger = false;
+    }
+
+    private IEnumerator CompleteLoad()
+    {
+        yield return new WaitForSeconds(2f);
+        NooSphere.SaveManager.Instance.SetLoadType(GameLoadType.LoadComplete);
+        NooSphere.Debug.LogWarning("로드 타입 로드 완료로 변경");
     }
 }

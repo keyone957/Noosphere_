@@ -1,0 +1,549 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Dialogue Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Dialogue
+  m_TableCollectionNameGuidString: 6be8326e451504539b2b4ffaa99208e3
+  m_Entries:
+  - m_Id: 166345039872
+    m_Key: Dialogue_Local_001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166386982912
+    m_Key: Dialogue_Local_002
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166391177216
+    m_Key: Dialogue_Local_003
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166391177217
+    m_Key: Dialogue_Local_004
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371520
+    m_Key: Dialogue_Local_005
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371521
+    m_Key: Dialogue_Local_006
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371522
+    m_Key: Dialogue_Local_007
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371523
+    m_Key: Dialogue_Local_008
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371524
+    m_Key: Dialogue_Local_009
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371525
+    m_Key: Dialogue_Local_010
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371526
+    m_Key: Dialogue_Local_011
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371527
+    m_Key: Dialogue_Local_012
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371528
+    m_Key: Dialogue_Local_013
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371529
+    m_Key: Dialogue_Local_014
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371530
+    m_Key: Dialogue_Local_015
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371531
+    m_Key: Dialogue_Local_016
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371532
+    m_Key: Dialogue_Local_017
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371533
+    m_Key: Dialogue_Local_018
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371534
+    m_Key: Dialogue_Local_019
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371535
+    m_Key: Dialogue_Local_020
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371536
+    m_Key: Dialogue_Local_021
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371537
+    m_Key: Dialogue_Local_022
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371538
+    m_Key: Dialogue_Local_023
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371539
+    m_Key: Dialogue_Local_024
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371540
+    m_Key: Dialogue_Local_025
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371541
+    m_Key: Dialogue_Local_026
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371542
+    m_Key: Dialogue_Local_027
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371543
+    m_Key: Dialogue_Local_028
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371544
+    m_Key: Dialogue_Local_029
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371545
+    m_Key: Dialogue_Local_030
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371546
+    m_Key: Dialogue_Local_031
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371547
+    m_Key: Dialogue_Local_032
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371548
+    m_Key: Dialogue_Local_033
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371549
+    m_Key: Dialogue_Local_034
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371550
+    m_Key: Dialogue_Local_035
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371551
+    m_Key: Dialogue_Local_036
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371552
+    m_Key: Dialogue_Local_037
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371553
+    m_Key: Dialogue_Local_038
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371554
+    m_Key: Dialogue_Local_039
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371555
+    m_Key: Dialogue_Local_040
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371556
+    m_Key: Dialogue_Local_041
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371557
+    m_Key: Dialogue_Local_042
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371558
+    m_Key: Dialogue_Local_043
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371559
+    m_Key: Dialogue_Local_044
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371560
+    m_Key: Dialogue_Local_045
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371561
+    m_Key: Dialogue_Local_046
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371562
+    m_Key: Dialogue_Local_047
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371563
+    m_Key: Dialogue_Local_048
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371564
+    m_Key: Dialogue_Local_049
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371565
+    m_Key: Dialogue_Local_050
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371566
+    m_Key: Dialogue_Local_051
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371567
+    m_Key: Dialogue_Local_052
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371568
+    m_Key: Dialogue_Local_053
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371569
+    m_Key: Dialogue_Local_054
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371570
+    m_Key: Dialogue_Local_055
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371571
+    m_Key: Dialogue_Local_056
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371572
+    m_Key: Dialogue_Local_057
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371573
+    m_Key: Dialogue_Local_058
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371574
+    m_Key: Dialogue_Local_059
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371575
+    m_Key: Dialogue_Local_060
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371576
+    m_Key: Dialogue_Local_061
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371577
+    m_Key: Dialogue_Local_062
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371578
+    m_Key: Dialogue_Local_063
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371579
+    m_Key: Dialogue_Local_064
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371580
+    m_Key: Dialogue_Local_065
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371581
+    m_Key: Dialogue_Local_066
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371582
+    m_Key: Dialogue_Local_067
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371583
+    m_Key: Dialogue_Local_068
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371584
+    m_Key: Dialogue_Local_069
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371585
+    m_Key: Dialogue_Local_070
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371586
+    m_Key: Dialogue_Local_071
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371587
+    m_Key: Dialogue_Local_072
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371588
+    m_Key: Dialogue_Local_073
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371589
+    m_Key: Dialogue_Local_074
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371590
+    m_Key: Dialogue_Local_075
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371591
+    m_Key: Dialogue_Local_076
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371592
+    m_Key: Dialogue_Local_077
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371593
+    m_Key: Dialogue_Local_078
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371594
+    m_Key: Dialogue_Local_079
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371595
+    m_Key: Dialogue_Local_080
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371596
+    m_Key: Dialogue_Local_081
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371597
+    m_Key: Dialogue_Local_082
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371598
+    m_Key: Dialogue_Local_083
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371599
+    m_Key: Dialogue_Local_084
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371600
+    m_Key: Dialogue_Local_085
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371601
+    m_Key: Dialogue_Local_086
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371602
+    m_Key: Dialogue_Local_087
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371603
+    m_Key: Dialogue_Local_088
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371604
+    m_Key: Dialogue_Local_089
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371605
+    m_Key: Dialogue_Local_090
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371606
+    m_Key: Dialogue_Local_091
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371607
+    m_Key: Dialogue_Local_092
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371608
+    m_Key: Dialogue_Local_093
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371609
+    m_Key: Dialogue_Local_094
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371610
+    m_Key: Dialogue_Local_095
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371611
+    m_Key: Dialogue_Local_096
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371612
+    m_Key: Dialogue_Local_097
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371613
+    m_Key: Dialogue_Local_098
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371614
+    m_Key: Dialogue_Local_099
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371615
+    m_Key: Dialogue_Local_100
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371616
+    m_Key: Dialogue_Local_101
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565824
+    m_Key: Dialogue_Local_102
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565825
+    m_Key: Dialogue_Local_103
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565826
+    m_Key: Dialogue_Local_104
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565827
+    m_Key: Dialogue_Local_105
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565828
+    m_Key: Dialogue_Local_106
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565829
+    m_Key: Dialogue_Local_107
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565830
+    m_Key: Dialogue_Local_108
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565831
+    m_Key: Dialogue_Local_109
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565832
+    m_Key: Dialogue_Local_110
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565833
+    m_Key: Dialogue_Local_111
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565834
+    m_Key: Dialogue_Local_112
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565835
+    m_Key: Dialogue_Local_113
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565836
+    m_Key: Dialogue_Local_114
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565837
+    m_Key: Dialogue_Local_115
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565838
+    m_Key: Dialogue_Local_116
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565839
+    m_Key: Dialogue_Local_117
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565840
+    m_Key: Dialogue_Local_118
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565841
+    m_Key: Dialogue_Local_119
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565842
+    m_Key: Dialogue_Local_120
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565843
+    m_Key: Dialogue_Local_121
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565844
+    m_Key: Dialogue_Local_122
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565845
+    m_Key: Dialogue_Local_123
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565846
+    m_Key: Dialogue_Local_124
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565847
+    m_Key: Dialogue_Local_125
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565848
+    m_Key: Dialogue_Local_126
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565849
+    m_Key: Dialogue_Local_127
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721042568998912
+    m_Key: Dialogue_Local_128
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721050617868288
+    m_Key: Dialogue_Local_129
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721051242819584
+    m_Key: Dialogue_Local_130
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3832960302725726210
+  references:
+    version: 2
+    RefIds:
+    - rid: 3832960302725726210
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1762241144633

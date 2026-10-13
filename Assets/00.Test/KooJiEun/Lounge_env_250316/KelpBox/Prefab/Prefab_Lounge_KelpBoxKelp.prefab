@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5853239099511551403
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 32760548a498f294ab80cc89cfb00f81,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.89194
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32760548a498f294ab80cc89cfb00f81,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.691433
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32760548a498f294ab80cc89cfb00f81,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.296953
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32760548a498f294ab80cc89cfb00f81,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32760548a498f294ab80cc89cfb00f81,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32760548a498f294ab80cc89cfb00f81,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32760548a498f294ab80cc89cfb00f81,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32760548a498f294ab80cc89cfb00f81,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32760548a498f294ab80cc89cfb00f81,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32760548a498f294ab80cc89cfb00f81,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32760548a498f294ab80cc89cfb00f81,
+        type: 3}
+      propertyPath: m_Name
+      value: Prefab_Lounge_KelpBoxKelp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172511871270681068, guid: 32760548a498f294ab80cc89cfb00f81,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 28c3561bd9d97d443959452da8400da3, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32760548a498f294ab80cc89cfb00f81, type: 3}

@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Korean (ko)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Korean (ko)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 5377f28db44c8354798e36a6d2a8083f
+  m_SerializeEntries:
+  - m_GUID: 1f9af0174d6ac1d47b811d833803a266
+    m_Address: Basic_UI_Tutorial_Ability
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 424e55762c1d04e8b81e43c5adfe57e1
+    m_Address: Basic_UI_Tutorial_Daialog_Start
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4bbf64cb2d414435e9b832b5eaad1907
+    m_Address: Basic_UI_Tutorial_Focus
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f8c8ddf07f1f4266b41be12f7190a86
+    m_Address: Basic_UI_Tutorial_Sub_ko
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 982ef8c7b88994850847065671f43caf
+    m_Address: UI_Clue_Email_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 990a28d8ea6bc4caaa17ffbf619a9e82
+    m_Address: Basic_UI_Tutorial_Daialog_progress
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3abd2d04464144dd945182f90f864db
+    m_Address: UI_Clue_Email_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3d0cd27fd75a429ba82bb9645194619
+    m_Address: Basic_UI_Tutorial_CharacterMove
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a62c8e8bbab4849b88c59ca544749b6a
+    m_Address: Basic_UI_Tutorial_Exit
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e33a36f6e5c1b41bdbfb3b5c444686ba
+    m_Address: UI_Clue_Email_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6d1bb5d6ef06461d8e98d15b28f1c4b
+    m_Address: Basic_UI_Tutorial_Inventory
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc475de9439265d4da130bba9eead192
+    m_Address: Basic_UI_Tutorial_Search
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 11fd02dd0acddfe438dc6c8a330e6943, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 52e9b1aaefd07ff4d853b67bd85d80c7, type: 2}
+    - {fileID: 11400000, guid: 3f6db0a54340dec458b2679c2ce0f512, type: 2}

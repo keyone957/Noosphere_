@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.Networking;
 using Cysharp.Threading.Tasks;
-using NooSphere;
 using Debug=NooSphere.Debug;
 public class CSVParser
 {
@@ -12,10 +11,11 @@ public class CSVParser
     {
         // 딕셔너리 생성
         Dictionary<string, T> dictionary = new Dictionary<string, T>();
-        string csvUrl = $"https://docs.google.com/spreadsheets/d/1rxLYxA5PoZcaMP9xGD0NrBs78GOLY9sKJv7_Ft9oPww/gviz/tq?tqx=out:csv&sheet={sheetName}";
+        // string csvUrl = $"https://docs.google.com/spreadsheets/d/1rxLYxA5PoZcaMP9xGD0NrBs78GOLY9sKJv7_Ft9oPww/gviz/tq?tqx=out:csv&sheet={sheetName}";
         
         // CSV 데이터 가져오기
-        string csvData = await LoadCSVFromURL(csvUrl);
+         string csvData = await LoadCSVFromResources(sheetName);
+        // string csvData=await LoadCSVFromURL(csvUrl);
         if (string.IsNullOrWhiteSpace(csvData))
         {
             Debug.Log("CSV 데이터를 로드할 수 없습니다.");
@@ -184,6 +184,30 @@ public class CSVParser
                 return string.Empty;
             }
         }
+    }
+    
+    private async UniTask<string> LoadCSVFromResources(string fileName)
+    {
+        if (_csvCache.TryGetValue(fileName, out string cachedData))
+        {
+            return cachedData;
+        }
+        
+        TextAsset textAsset = Resources.Load<TextAsset>($"EventCSV/{fileName}");
+        
+        if (textAsset == null)
+        {
+            Debug.LogError($"리소스에서 CSV 파일을 찾을 수 없습니다: EventCSV/{fileName}");
+            return string.Empty;
+        }
+
+        string csvText = textAsset.text;
+
+
+        await UniTask.Delay(200);
+        
+        _csvCache[fileName] = csvText;
+        return csvText;
     }
 
     // CSV 라인을 쉼표로 정확히 분리하는 메서드 (따옴표 처리 포함)

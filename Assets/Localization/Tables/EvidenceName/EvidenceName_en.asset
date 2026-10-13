@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: EvidenceName_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: c532935dccb63164c9766ed0bbabe36a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 178187571200
+    m_Localized: Research Log (Mental)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178237902848
+    m_Localized: Research Log (Reality)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097152
+    m_Localized: Pendant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097153
+    m_Localized: ID Card
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097154
+    m_Localized: The list of experiment subjects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097155
+    m_Localized: Parents' Letter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097156
+    m_Localized: Diary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097157
+    m_Localized: A photo of the research institute
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097158
+    m_Localized: Newspaper Article
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097159
+    m_Localized: Mysterious Note
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097160
+    m_Localized: Lounge Key Card 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097161
+    m_Localized: Lounge Key Card 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097162
+    m_Localized: Lounge Key Card 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097163
+    m_Localized: Lounge Key Card 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097164
+    m_Localized: Someone's Letter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097165
+    m_Localized: A blueprint of the research institute
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097166
+    m_Localized: Drawing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097167
+    m_Localized: Hospital Documents & Experiment Contract
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097168
+    m_Localized: Mirror Shard 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097169
+    m_Localized: Mirror Shard 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097170
+    m_Localized: Mirror Shard 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097171
+    m_Localized: Mirror Shard 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097172
+    m_Localized: Mirror Shard 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097173
+    m_Localized: Subject's Notebook (Reality)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097174
+    m_Localized: Locker Key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097175
+    m_Localized: Daughter's Letter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097176
+    m_Localized: Doctor's Notebook
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097177
+    m_Localized: Group Photo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097178
+    m_Localized: My Diary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097179
+    m_Localized: Subject's Notebook (Mental)
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

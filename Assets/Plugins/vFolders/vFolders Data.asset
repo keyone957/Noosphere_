@@ -30,6 +30,8 @@ MonoBehaviour:
     - fde708a2c4169864b9ac407ecbe7fb6e
     - e2a6461351d0b5e4a85dff4195b6de9d
     - ac65556539ff96344b3fa9f6721ef914
+    - 7fa19fda68e4ddd4e9a360c801a24902
+    - ddae445e9d53a8b4fbf522ee3bd9a9c5
     values:
     - colorIndex: 2
       iconNameOrGuid: SceneAsset Icon
@@ -52,7 +54,7 @@ MonoBehaviour:
     - colorIndex: 2
       iconNameOrGuid: RawImage Icon
     - colorIndex: 3
-      iconNameOrGuid: Settings Icon
+      iconNameOrGuid: ScriptableObject Icon
     - colorIndex: 4
       iconNameOrGuid: Terrain Icon
     - colorIndex: 1
@@ -61,5 +63,9 @@ MonoBehaviour:
       iconNameOrGuid: MeshCollider Icon
     - colorIndex: 5
       iconNameOrGuid: 
+    - colorIndex: 10
+      iconNameOrGuid: 
+    - colorIndex: 4
+      iconNameOrGuid: TextAsset Icon
     - colorIndex: 10
       iconNameOrGuid: 

@@ -1,0 +1,18 @@
+@,,,,,
+@,,,,,
+@,,,,,
+@,,중간에 끊길 때,,,
+@,진입 프로세스 성공 시 실행되는 결과,진입 프로세스 실패 시 실행되는 결과,,이동 도착 지점(씬 이름),돌아오는 정보
+mentalId,mentalTrueResult,mentalFalseResult1,mentalFalseResult2,destination,combackEventId
+Mental_0001,Event_A006,,,PrologueMap_spirit,Event_A009
+Mental_0002,Event_A010,,,PrologueMap_real,
+Mental_0003,Event_B060,Event_B099,,Stage1Map_real,
+Mental_0004,Event_A029,,,PrologueMap_spirit,Event_A028
+Mental_0005,Event_A030,,,PrologueMap_real,
+Mental_0006,Event_B058,,,Stage1Map_spirit,Event_B045
+Mental_0007,Event_B060,,,Stage1Map_real,
+Mental_0008,Event_C074,,,Stage2Map_spirit,Event_C075
+Mental_0009,Event_C085,Dialogue_0039,,Stage2Map_real,
+Mental_0010,Event_B058,,,Stage1Map_spirit,Event_B059
+Mental_0011,Event_D087,,,,
+Mental_0012,Event_D098,,,,

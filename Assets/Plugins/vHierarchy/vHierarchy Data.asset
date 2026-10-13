@@ -18,6 +18,11 @@ MonoBehaviour:
     - 05e4da82120cc43fb9b6f567ee09f0e4
     - 8f91f908cee2bd748bce10309440ca2f
     - 355708bd7d12a3a4e844dd15f6423edb
+    - 4394f57b4c3bf2d448f10b2f85c656e0
+    - db1d594b7657b3246b679d9caf2b0004
+    - 246f85b2967f4194eb180b84d2de1d17
+    - 27ed32257258da34594c30954b0561ec
+    - 0d224eefef4cda241aafbc850b35f884
     values:
     - goDatas_byGlobalId:
         keys: []
@@ -39,4 +44,58 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-355708bd7d12a3a4e844dd15f6423edb-358590242-0
         values:
         - colorIndex: 9
+          iconNameOrGuid: 
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-4394f57b4c3bf2d448f10b2f85c656e0-1038794571-0
+        values:
+        - colorIndex: 9
+          iconNameOrGuid: 
+    - goDatas_byGlobalId:
+        keys: []
+        values: []
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-246f85b2967f4194eb180b84d2de1d17-980538807-0
+        - globalObjectIdString: GlobalObjectId_V1-2-246f85b2967f4194eb180b84d2de1d17-1661194337-0
+        - globalObjectIdString: GlobalObjectId_V1-2-246f85b2967f4194eb180b84d2de1d17-216564801-0
+        - globalObjectIdString: GlobalObjectId_V1-2-246f85b2967f4194eb180b84d2de1d17-1405922323-0
+        - globalObjectIdString: GlobalObjectId_V1-2-246f85b2967f4194eb180b84d2de1d17-5580178108390234642-8172531
+        values:
+        - colorIndex: 9
+          iconNameOrGuid: 
+        - colorIndex: 8
+          iconNameOrGuid: 
+        - colorIndex: 2
+          iconNameOrGuid: 
+        - colorIndex: 7
+          iconNameOrGuid: 
+        - colorIndex: 5
+          iconNameOrGuid: 
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-27ed32257258da34594c30954b0561ec-1773271732-0
+        - globalObjectIdString: GlobalObjectId_V1-2-27ed32257258da34594c30954b0561ec-1200443625-0
+        - globalObjectIdString: GlobalObjectId_V1-2-27ed32257258da34594c30954b0561ec-1292506249-0
+        - globalObjectIdString: GlobalObjectId_V1-2-27ed32257258da34594c30954b0561ec-1837998411-0
+        - globalObjectIdString: GlobalObjectId_V1-2-27ed32257258da34594c30954b0561ec-2089463437-0
+        - globalObjectIdString: GlobalObjectId_V1-2-27ed32257258da34594c30954b0561ec-442568186-0
+        values:
+        - colorIndex: 9
+          iconNameOrGuid: 
+        - colorIndex: 4
+          iconNameOrGuid: 
+        - colorIndex: 2
+          iconNameOrGuid: 
+        - colorIndex: 3
+          iconNameOrGuid: 
+        - colorIndex: 4
+          iconNameOrGuid: 
+        - colorIndex: 4
+          iconNameOrGuid: 
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-0d224eefef4cda241aafbc850b35f884-1040940562-0
+        values:
+        - colorIndex: 2
           iconNameOrGuid: 

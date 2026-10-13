@@ -13,6 +13,19 @@ MonoBehaviour:
   m_Name: Soundresource_014
   m_EditorClassIdentifier: 
   soundID: Soundresource_014
-  soundClip: {fileID: 8300000, guid: 2690d0c53875b42128bc741b8e84b13f, type: 3}
+  soundClip: {fileID: 8300000, guid: 7a148e41c1aee44ecb967ab8227b7e06, type: 3}
+  bypassEffects: 0
+  bypassListenerEffects: 0
+  bypassReverbZones: 0
   loopCnt: 1
-  volume: 1
+  volume: 0.4
+  priority: 128
+  pitch: 1
+  stereoPan: 0
+  spatialBlend: 0
+  reverbZoneMix: 1
+  dopplerLevel: 1
+  spread: 0
+  volumeRolloff: 0
+  minDistance: 1
+  maxDistance: 500

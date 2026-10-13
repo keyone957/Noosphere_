@@ -1,0 +1,301 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UIText Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UIText
+  m_TableCollectionNameGuidString: 42de818360f826146837fcd8f95ff601
+  m_Entries:
+  - m_Id: 148248629248
+    m_Key: UI_Local_001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148311543808
+    m_Key: UI_Local_002
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738112
+    m_Key: UI_Local_003
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738113
+    m_Key: UI_Local_004
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738114
+    m_Key: UI_Local_005
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738115
+    m_Key: UI_Local_006
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738116
+    m_Key: UI_Local_007
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738117
+    m_Key: UI_Local_008
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738118
+    m_Key: UI_Local_009
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738119
+    m_Key: UI_Local_010
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738120
+    m_Key: UI_Local_011
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738121
+    m_Key: UI_Local_012
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738122
+    m_Key: UI_Local_013
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738123
+    m_Key: UI_Local_014
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738124
+    m_Key: UI_Local_015
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738125
+    m_Key: UI_Local_016
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738126
+    m_Key: UI_Local_017
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738127
+    m_Key: UI_Local_018
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738128
+    m_Key: UI_Local_019
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738129
+    m_Key: UI_Local_020
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738130
+    m_Key: UI_Local_021
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738131
+    m_Key: UI_Local_022
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738132
+    m_Key: UI_Local_023
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738133
+    m_Key: UI_Local_024
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738134
+    m_Key: UI_Local_025
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738135
+    m_Key: UI_Local_026
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738136
+    m_Key: UI_Local_027
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738137
+    m_Key: UI_Local_028
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738138
+    m_Key: UI_Local_029
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738139
+    m_Key: UI_Local_030
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738141
+    m_Key: UI_Local_032
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738142
+    m_Key: UI_Local_033
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738143
+    m_Key: UI_Local_034
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738144
+    m_Key: UI_Local_035
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738145
+    m_Key: UI_Local_036
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738146
+    m_Key: UI_Local_037
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738147
+    m_Key: UI_Local_038
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738148
+    m_Key: UI_Local_039
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738149
+    m_Key: UI_Local_040
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738150
+    m_Key: UI_Local_041
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738151
+    m_Key: UI_Local_042
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738152
+    m_Key: UI_Local_043
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738153
+    m_Key: UI_Local_044
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738154
+    m_Key: UI_Local_045
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738155
+    m_Key: UI_Local_046
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738156
+    m_Key: UI_Local_047
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738157
+    m_Key: UI_Local_048
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738158
+    m_Key: UI_Local_049
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738159
+    m_Key: UI_Local_050
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738160
+    m_Key: UI_Local_051
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738161
+    m_Key: UI_Local_052
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738162
+    m_Key: UI_Local_053
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738163
+    m_Key: UI_Local_054
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738164
+    m_Key: UI_Local_055
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738165
+    m_Key: UI_Local_056
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738166
+    m_Key: UI_Local_057
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738167
+    m_Key: UI_Local_058
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34471022596096
+    m_Key: UI_Local_059
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738171
+    m_Key: UI_Local_062
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9866652323840
+    m_Key: UI_Local_063
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11414681849856
+    m_Key: UI_Local_064
+    m_Metadata:
+      m_Items: []
+  - m_Id: 325755417387008
+    m_Key: UI_Local_065
+    m_Metadata:
+      m_Items: []
+  - m_Id: 325758596669440
+    m_Key: UI_Local_066
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15097029666529280
+    m_Key: UI_Local_067
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15097029729443840
+    m_Key: UI_Local_068
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15097029729443841
+    m_Key: UI_Local_069
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15097029729443842
+    m_Key: UI_Local_070
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15097029729443843
+    m_Key: UI_Local_071
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2917908225085669384
+  references:
+    version: 2
+    RefIds:
+    - rid: 2917908225085669384
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1762167951585

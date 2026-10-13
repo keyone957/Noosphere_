@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -20,16 +20,16 @@ public class StartSceneController : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (InputRouter.Instance.ConsumeW())
         {
             MoveUp();
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (InputRouter.Instance.ConsumeS())
         {
             MoveDown();
         }
 
-        if (_curSelectedBtn != null && Input.GetKeyDown(KeyCode.Space))
+        if (_curSelectedBtn != null && InputRouter.Instance.ConsumeSpace())
         {
             ExecuteEvents.Execute<ISelectHandler>(
                 _curSelectedBtn, 

@@ -1,0 +1,567 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogue_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 6be8326e451504539b2b4ffaa99208e3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 166345039872
+    m_Localized: "...Who are you? And where am I? \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166386982912
+    m_Localized: "...This is the Noosphere Psionics Institute. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166391177216
+    m_Localized: "It's a place where we protect and manage people\\nwith special
+      psychic abilities, just like you. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166391177217
+    m_Localized: "\u2026Psychic abilities? \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371520
+    m_Localized: "It's the power to enter the mental world of others.\\nYou have
+      the power to change the world through your abilities. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371521
+    m_Localized: "It's a tremendous power,\\nbut there's also a great risk of...
+      putting someone in danger. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371522
+    m_Localized: "You were involved in a major incident.\\nThat seems to be why your
+      memory is not intact. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371523
+    m_Localized: "We will conduct training and watch over you\\nso that you can properly
+      control those abilities. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371524
+    m_Localized: "Why are you helping me? \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371525
+    m_Localized: "...You will find out in time.\\nEverything is... for you. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371526
+    m_Localized: "First, just let my words guide you.\\nLet's begin. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371527
+    m_Localized: "Approach the sleeping researcher. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371528
+    m_Localized: "To enter other's mental world, they must be asleep. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371529
+    m_Localized: "Now, let's try to enter their mental worlds. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371530
+    m_Localized: "Keep your concentration 'consistent' \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371531
+    m_Localized: "You've entered the mental world.\\nThis place reflects each person's
+      memories and thoughts. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371532
+    m_Localized: "I see the researcher's 'Research Log' on the desk there.\\nGo closer
+      and take a look carefully. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371533
+    m_Localized: "Most of the objects you looked at can be retrieved later. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371534
+    m_Localized: "That's possible not only in the mental world but also in the real
+      world. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371535
+    m_Localized: "Now, let's return to the real world.\\nConcentrate, just as you
+      did when you entered. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371536
+    m_Localized: "Finally, I will inform you of the passing criteria for this training.
+      \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371537
+    m_Localized: "Find out the name of the researcher\u2026\\nwho owns the mental
+      world you entered. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371538
+    m_Localized: "Use your abilities to the fullest, carefully observe your surroundings,\\nand
+      try to deduce it. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371539
+    m_Localized: "Once you come back with correct answer,\\nthe training will be
+      concluded. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371540
+    m_Localized: "What is the researcher's 'full name'? \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371541
+    m_Localized: "That is incorrect.\\nTry again. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371542
+    m_Localized: "That is correct.\\nIt's time to finish our training. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371543
+    m_Localized: "You may go outside through the door and look around this place.\\nYou
+      must be wondering who you are... \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371544
+    m_Localized: "The training is not over yet.\\nLet's finish the training, and
+      then you can leave. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371545
+    m_Localized: "It's locked. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371546
+    m_Localized: "(Click) \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371547
+    m_Localized: "It's opened. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371548
+    m_Localized: "...Stop. Just focus on the training. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371549
+    m_Localized: "Let's open it when I'm alone. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371550
+    m_Localized: "It's locked.\\nIt looks a key card is required. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371551
+    m_Localized: "It's locked. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371552
+    m_Localized: "It looks like this is the wrong key card. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371553
+    m_Localized: "It is opened. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371554
+    m_Localized: (Crackling...) This is news that an unidentified child has disappeared
+      from a hospital in Palette City.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371555
+    m_Localized: There have been no witnesses, and the search efforts have made no
+      significant progress.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371556
+    m_Localized: The hospital seems to be avoiding responsibility for the incident.\n(Ticking...)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371557
+    m_Localized: "I don't think I should open this recklessly. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371558
+    m_Localized: "Leaving already? Child, I'm trying to help you. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371559
+    m_Localized: (Whirring-) Those three were always together.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371560
+    m_Localized: Laughing, chatting, relying on each other.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371561
+    m_Localized: ...They had to make a choice.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371562
+    m_Localized: The child's anxious face as he walks into the lab.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371563
+    m_Localized: Behind that, the doctor's voice calling the child. (Tick...)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371564
+    m_Localized: (Whirring-) We were always together.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371565
+    m_Localized: Laughing, chatting, and relying on each other.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371566
+    m_Localized: ...I had to make a choice.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371567
+    m_Localized: My last voice leaving the institute.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371568
+    m_Localized: Behind that, his face is unreadable. (Tick...)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371569
+    m_Localized: "The first training session is over. You may leave now. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371570
+    m_Localized: "It's been a while. You haven't been doing... well, have you?\\nIt's
+      okay. I haven't either. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371571
+    m_Localized: How about it? Do you, as you are now, want to escape from here?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371572
+    m_Localized: "I see. Good, just trust me.\\nI'll make sure you escape. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371573
+    m_Localized: "...Because I still have no courage. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371574
+    m_Localized: "Here, take it.\\nIt was really hard to get this, but I'm glad at
+      least you can use it. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371575
+    m_Localized: "Goodbye. Take care, kid. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371576
+    m_Localized: "Oh? Still the same, I see. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371577
+    m_Localized: "Now, go back.\\nI'm sorry I can't help you anymore. Goodbye. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371578
+    m_Localized: "It's locked. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371579
+    m_Localized: "...How do you remember her? \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371580
+    m_Localized: "... \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371581
+    m_Localized: "Haha, I never knew such a message had been left in the letter I
+      couldn't even touch. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371582
+    m_Localized: "What should I do...? \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371583
+    m_Localized: "...It's been a while. How have you been? \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371584
+    m_Localized: "... \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371585
+    m_Localized: "You really don't remember.\\nMe, the events of that day, or her.
+      \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371586
+    m_Localized: "I know it's not your fault.\\nHowever... \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371587
+    m_Localized: "Yes. You must return to that memory.\\nAll the answers will be
+      there. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371588
+    m_Localized: "\u2026Maybe it's time to start the final session. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371589
+    m_Localized: "Very well. Please wait a moment. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371590
+    m_Localized: "Carry out the plan. Be prepared. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371591
+    m_Localized: "...Is this really the only way?\\nMaybe we can have more time to
+      prepare. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371592
+    m_Localized: "Time? Did you say 'time'?\\nI've already waited for a long time.
+      \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371593
+    m_Localized: "If we delay any longer and something happens to Elise,\\nwill you
+      take responsibility? \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371594
+    m_Localized: "...I see. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371595
+    m_Localized: "Enter his mental world. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371596
+    m_Localized: "Have you forgotten already! \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371597
+    m_Localized: "You are not allowed to leave yet\u2026 \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371598
+    m_Localized: ...The experiment will now begin. A-505, please prepare to use your
+      ability.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371599
+    m_Localized: ...Yes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371600
+    m_Localized: (Whirring-) Mental world entry completed. The target safe is visible.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371601
+    m_Localized: A-505, open the safe and remove the contents.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371602
+    m_Localized: (...)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371603
+    m_Localized: Hah,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371604
+    m_Localized: (Beep- Beep- Beep- Beep-)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371605
+    m_Localized: What's happening?!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371606
+    m_Localized: Doctor! We have a problem! The mental world and reality,... Argh!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371607
+    m_Localized: Stop! We have to save the child! Hold on a second, I'll help you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371608
+    m_Localized: (...)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371609
+    m_Localized: No... Elise, Elise!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371610
+    m_Localized: "Yellow Key Card Acquired. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371611
+    m_Localized: "Yellow Key Card Returned. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371612
+    m_Localized: "Blue Key Card Acquired. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371613
+    m_Localized: "Blue Key Card Returned. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371614
+    m_Localized: "Green Key Card Acquired. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371615
+    m_Localized: "Green Key Card Returned. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166395371616
+    m_Localized: "Red Key Card Acquired. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565824
+    m_Localized: "Red Key Card Returned. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565825
+    m_Localized: "Come, follow me. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565826
+    m_Localized: "...Kid. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565827
+    m_Localized: "... \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565828
+    m_Localized: "...Wake up... \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565829
+    m_Localized: "You have to wake up... \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565830
+    m_Localized: "Ha... ha! Finally... We finally did it! \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565831
+    m_Localized: "Here is... \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565832
+    m_Localized: "Idiot... You're in your own mental world.\\nBecause of you, my
+      daughter Elise is trapped here! \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565833
+    m_Localized: "\u2026 \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565834
+    m_Localized: "Why are you just standing there? Come on\u2026 please go find him.\\nRight
+      now! \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565835
+    m_Localized: "Elise...! Are you, are you alright?\\nCan you... hear me? \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565836
+    m_Localized: "\u2026 \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565837
+    m_Localized: "...She's unconscious.\\nNo, no. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565838
+    m_Localized: "There's no time to waste.\\nGet Elise to the exit right now! \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565839
+    m_Localized: "(Buzzing!) \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565840
+    m_Localized: "\u2026These cables won't untangle. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565841
+    m_Localized: "How could this happen!\\nNo way, absolutely no way! \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565842
+    m_Localized: "Elise! \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565843
+    m_Localized: "Run! Quickly! \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565844
+    m_Localized: "You\u2026 alone? How dare you\u2026 \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565845
+    m_Localized: "Ugh, no! \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565847
+    m_Localized: "This item cannot be used. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565848
+    m_Localized: "Mirror Shard Acquired. \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166399565849
+    m_Localized: "... \u25BA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721042568998912
+    m_Localized: Are you waking up?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721050617868288
+    m_Localized: This way.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721051242819584
+    m_Localized: This way!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

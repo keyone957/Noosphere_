@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: EvidenceName Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: EvidenceName
+  m_TableCollectionNameGuidString: c532935dccb63164c9766ed0bbabe36a
+  m_Entries:
+  - m_Id: 178187571200
+    m_Key: EvidenceName_Local_001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178237902848
+    m_Key: EvidenceName_Local_002
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097152
+    m_Key: EvidenceName_Local_003
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097153
+    m_Key: EvidenceName_Local_004
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097154
+    m_Key: EvidenceName_Local_005
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097155
+    m_Key: EvidenceName_Local_006
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097156
+    m_Key: EvidenceName_Local_007
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097157
+    m_Key: EvidenceName_Local_008
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097158
+    m_Key: EvidenceName_Local_009
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097159
+    m_Key: EvidenceName_Local_010
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097160
+    m_Key: EvidenceName_Local_011
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097161
+    m_Key: EvidenceName_Local_012
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097162
+    m_Key: EvidenceName_Local_013
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097163
+    m_Key: EvidenceName_Local_014
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097164
+    m_Key: EvidenceName_Local_015
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097165
+    m_Key: EvidenceName_Local_016
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097166
+    m_Key: EvidenceName_Local_017
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097167
+    m_Key: EvidenceName_Local_018
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097168
+    m_Key: EvidenceName_Local_019
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097169
+    m_Key: EvidenceName_Local_020
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097170
+    m_Key: EvidenceName_Local_021
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097171
+    m_Key: EvidenceName_Local_022
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097172
+    m_Key: EvidenceName_Local_023
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097173
+    m_Key: EvidenceName_Local_024
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097174
+    m_Key: EvidenceName_Local_025
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097175
+    m_Key: EvidenceName_Local_026
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097176
+    m_Key: EvidenceName_Local_027
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097177
+    m_Key: EvidenceName_Local_028
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097178
+    m_Key: EvidenceName_Local_029
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178242097179
+    m_Key: EvidenceName_Local_030
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2917908225085669376
+  references:
+    version: 2
+    RefIds:
+    - rid: 2917908225085669376
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1762166491071

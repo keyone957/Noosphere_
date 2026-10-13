@@ -1,8 +1,9 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using Debug = NooSphere.Debug;
 
 public class QuizManager : Singleton<QuizManager>
 {
@@ -19,6 +20,10 @@ public class QuizManager : Singleton<QuizManager>
 
         if (_curQuiz.quizType == "input")
         {
+            if(inputFieldManager == null)
+            {
+                inputFieldManager = FindObjectOfType<InputFieldManager>();
+            }
             inputFieldManager.SetQuestionField(quizID);
         }
         else if (_curQuiz.quizType == "ui")
@@ -28,7 +33,7 @@ public class QuizManager : Singleton<QuizManager>
             GameObject quizObject = GameObject.Find(_curQuiz.quizId);
             Debug.Log($"quiz obejct : {quizObject}, 아이디 : {_curQuiz.quizId}");
             UIBase script = quizObject.GetComponent<UIBase>();
-            PlayerInteract.Instance.HideInteractionMark();
+            //PlayerInteract.Instance.HideInteractionMark();
             UIManager.Instance.OpenUI(script,_curQuiz.quizId);
         }
     }

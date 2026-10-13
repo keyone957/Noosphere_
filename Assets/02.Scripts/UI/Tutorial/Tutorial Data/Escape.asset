@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialName: Escape
   heightSize: 132
-  tutorialImg: {fileID: 21300000, guid: d7f5fa2a3e6544e85a67eb89a88c2c19, type: 3}
+  tutorialImg: {fileID: 21300000, guid: 59079fbc46db36f4da3fb2e61d04c3c3, type: 3}

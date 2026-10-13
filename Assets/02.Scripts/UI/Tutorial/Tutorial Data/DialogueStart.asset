@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialName: DialogueStart
   heightSize: 132
-  tutorialImg: {fileID: 21300000, guid: a615208f8f3db46f8ad319551d3acc5d, type: 3}
+  tutorialImg: {fileID: 21300000, guid: 424e55762c1d04e8b81e43c5adfe57e1, type: 3}

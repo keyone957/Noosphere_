@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/01.Scene/StartScene.unity
     guid: 24c91bff4e1f0477ea96cfcf5d1df4f0
   - enabled: 1
-    path: Assets/01.Scene/LoadingScene.unity
+    path: Assets/01.Scene/LoadingScene/LoadingScene.unity
     guid: f0faf1c8f386b3840aca78b5d93ff278
+  - enabled: 1
+    path: Assets/01.Scene/IntroScene.unity
+    guid: 4394f57b4c3bf2d448f10b2f85c656e0
   - enabled: 1
     path: Assets/01.Scene/Prologue/PrologueMap_real.unity
     guid: 8447cb754937fc940aa702afdfb89c97
@@ -35,6 +38,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scene/Stage2/Stage2Map_spirit.unity
     guid: db1d594b7657b3246b679d9caf2b0004
+  - enabled: 1
+    path: Assets/01.Scene/DemoEndScene.unity
+    guid: cfdf28daa8138014eb74a7c0c9ab6888
+  - enabled: 1
+    path: Assets/01.Scene/FinalStage/FinalStage_Real.unity
+    guid: 27ed32257258da34594c30954b0561ec
+  - enabled: 1
+    path: Assets/01.Scene/FinalStage/FinalStage_Spirit.unity
+    guid: 246f85b2967f4194eb180b84d2de1d17
+  - enabled: 1
+    path: Assets/01.Scene/EndingScene.unity
+    guid: bd09dd9dee5100f478db3e362fff6774
+  - enabled: 1
+    path: Assets/01.Scene/CreditScene.unity
+    guid: d9971901bb87bd144bb5575f2a41cb4d
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: eb40029a8518bb9499709359545bed08,
+    com.unity.addressableassets: {fileID: 11400000, guid: 6e8a9348981931943a83a35354d68682,
+      type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: ad56f5892e3e9d6489907c41dd686cf9,
+      type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 7be9923f2574b054c9abd87c59fbd29b,
       type: 3}
+    com.unity.localization.settings: {fileID: 11400000, guid: feace81c171ef1040a4c575c04fde629,
+      type: 2}

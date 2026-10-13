@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: ImageTables_ko
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ko
+  m_SharedData: {fileID: 11400000, guid: c1ecf9349ffa1774e91ef0c1c7481df3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 243555799040
+    m_Localized: 6f8c8ddf07f1f4266b41be12f7190a86[Basic_UI_Tutorial_Sub_KO]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15965182922752
+    m_Localized: a3d0cd27fd75a429ba82bb9645194619[Basic_UI_Tutorial_CharacterMove]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16012414980096
+    m_Localized: 4bbf64cb2d414435e9b832b5eaad1907[Basic_UI_Tutorial_Focus]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16035743698944
+    m_Localized: 990a28d8ea6bc4caaa17ffbf619a9e82[Basic_UI_Tutorial_Daialog_progress]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16054433517568
+    m_Localized: 424e55762c1d04e8b81e43c5adfe57e1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16102768676864
+    m_Localized: a62c8e8bbab4849b88c59ca544749b6a[Basic_UI_Tutorial_Exit]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16125191426048
+    m_Localized: fc475de9439265d4da130bba9eead192[Basic_UI_Tutorial_Search]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16144820768768
+    m_Localized: e6d1bb5d6ef06461d8e98d15b28f1c4b[Basic_UI_Tutorial_Inventory]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16163586084864
+    m_Localized: 1f9af0174d6ac1d47b811d833803a266[Basic_UI_Tutorial_Ability]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2371151580880896
+    m_Localized: 982ef8c7b88994850847065671f43caf[UI_Clue_Email_1]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2371199081373696
+    m_Localized: e33a36f6e5c1b41bdbfb3b5c444686ba[UI_Clue_Email_2]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2371216861028352
+    m_Localized: a3abd2d04464144dd945182f90f864db[UI_Clue_Email_3]
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

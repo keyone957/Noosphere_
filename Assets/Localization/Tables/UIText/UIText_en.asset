@@ -1,0 +1,298 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UIText_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 42de818360f826146837fcd8f95ff601, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 148248629248
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148311543808
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738112
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738113
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738114
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738115
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738116
+    m_Localized: Slot 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738117
+    m_Localized: Slot 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738118
+    m_Localized: No Saved Data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738119
+    m_Localized: Save Location
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738120
+    m_Localized: Play Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738121
+    m_Localized: Save Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738122
+    m_Localized: Delete Slot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738123
+    m_Localized: Start Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738124
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738125
+    m_Localized: Starting a new game will reset the existing save data.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738126
+    m_Localized: 'Do you want to overwrite your previous game and start a new one?
+
+      This
+      action cannot be undone.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738127
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738128
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738129
+    m_Localized: BGM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738130
+    m_Localized: SFX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738131
+    m_Localized: Display
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738132
+    m_Localized: Window
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738133
+    m_Localized: Full Screen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738134
+    m_Localized: Apply
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738135
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738136
+    m_Localized: Do you want to delete this slot?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738137
+    m_Localized: This action cannot be undone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738138
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738139
+    m_Localized: Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738141
+    m_Localized: To Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738142
+    m_Localized: Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738143
+    m_Localized: Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738144
+    m_Localized: Do you want to save data in Slot NUMBER?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738145
+    m_Localized: This action cannot be undone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738146
+    m_Localized: Saving...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738147
+    m_Localized: Game data has been saved.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738148
+    m_Localized: Do you want to overwrite the data in Slot NUMBER?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738149
+    m_Localized: This action cannot be undone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738150
+    m_Localized: Talk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738151
+    m_Localized: Examine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738152
+    m_Localized: Open
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738153
+    m_Localized: Enter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738154
+    m_Localized: Use
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738155
+    m_Localized: Look Closer?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738156
+    m_Localized: Open
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738157
+    m_Localized: Use
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738158
+    m_Localized: Select
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738159
+    m_Localized: Move to the Next Page
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738160
+    m_Localized: Rotate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738161
+    m_Localized: Zoom In/Out
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738162
+    m_Localized: What is the researcher's name?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738163
+    m_Localized: Cannot be used
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738164
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738165
+    m_Localized: Dr. Roman Lane<br><size=15>(Untitled)</size>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738166
+    m_Localized: David Edwin<br><size=15>Are you okay now? Please...</size>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738167
+    m_Localized: Daily News<br><size=15>[Weekly Headline] The End of...</size>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34471022596096
+    m_Localized: Can we please get this in order?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148315738171
+    m_Localized: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9866652323840
+    m_Localized: Slot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11414681849856
+    m_Localized: Do you want to quit the game?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 325755417387008
+    m_Localized: '- Yes'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 325758596669440
+    m_Localized: '- No'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15097029666529280
+    m_Localized: Thank you for<br>playing our demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15097029729443840
+    m_Localized: YES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15097029729443841
+    m_Localized: NO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15097029729443842
+    m_Localized: Auto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15097029729443843
+    m_Localized: SKIP
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

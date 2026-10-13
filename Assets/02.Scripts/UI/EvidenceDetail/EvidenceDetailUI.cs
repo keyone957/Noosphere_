@@ -1,9 +1,11 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization.Settings;
+using Debug = NooSphere.Debug;
 
 public class EvidenceDetailUI : UIBase
 {
@@ -19,7 +21,8 @@ public class EvidenceDetailUI : UIBase
     
     [Header("증거물 상세내용 공통 UI")]
     [SerializeField] private Image _bgImg;
-    [SerializeField] private Sprite _inventoryBgImg;
+    [SerializeField] private Sprite _inventoryBgImgReal;
+    [SerializeField] private Sprite _inventoryBgImgMental;
 
     [Header("Page 증거물")] [SerializeField] private int _curPage;
     [SerializeField] private int _totalPage;
@@ -41,18 +44,13 @@ public class EvidenceDetailUI : UIBase
             return;
         }
         
+        UIManager.Instance.cctvFrame.SetActive(false);
         
         //인벤토리에서 증거물 상세사항을 오픈할 경우에는 UI 순서를 위해 아래의 설정이 필요함.
         if (!UIManager.Instance.isInMap)
         {
             PlayerController.Instance._uiCanvas.renderMode = RenderMode.ScreenSpaceCamera;
             PlayerController.Instance._uiCanvas.worldCamera = PlayerController.Instance._mainCamera;
-
-            if (evidence.evidenceId == "Evidence_020")
-            {
-                evidence.AcquireEvidence();
-                InventoryManager.Instance.UpdateInventoryUI();
-            }
         }
         
         SetDetailEvidence(evidence);
@@ -62,6 +60,9 @@ public class EvidenceDetailUI : UIBase
         {
             transform.GetChild(0).gameObject.SetActive(true);
         }
+
+        // 나가기 버튼 활성화
+        EscapeUI.Instance.Active();
     }
 
     public override void OnClose()
@@ -72,6 +73,8 @@ public class EvidenceDetailUI : UIBase
         {
             PlayerController.Instance._uiCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
         }
+        
+        UIManager.Instance.cctvFrame.SetActive(true);
         
         _objectUI.SetActive(false);
         _onePageUI.SetActive(false);
@@ -89,10 +92,13 @@ public class EvidenceDetailUI : UIBase
     {
         base.HandleKeyboardInput();
         
+        // Object UI이면 페이지 넘기는 소리 나오지 않도록
+        if(_objectUI.activeSelf) return;
+        
         //키보드 A - 이전 페이지 버튼 
         if (_prevPageBtn != null && _nextPageBtn != null)
         {
-            if (_prevPageBtn.activeSelf && Input.GetKeyDown(KeyCode.A))
+            if (_prevPageBtn.activeSelf && InputRouter.Instance.ConsumeA())
             {
                 RemoveAllListeners();
                 AddOnClickListener(ClickPrevPageEvent);
@@ -100,7 +106,7 @@ public class EvidenceDetailUI : UIBase
             }
 
             //키보드 D - 다음 페이지 버튼
-            if (_nextPageBtn.activeSelf && Input.GetKeyDown(KeyCode.D))
+            if (_nextPageBtn.activeSelf && InputRouter.Instance.ConsumeD())
             { 
                 RemoveAllListeners();
                 AddOnClickListener(ClickNextPageEvent);
@@ -118,7 +124,14 @@ public class EvidenceDetailUI : UIBase
         {
             if (!UIManager.Instance.isInMap)
             {
-                _bgImg.sprite = _inventoryBgImg;
+                if (evidence.evidenceType == 'R')
+                {
+                    _bgImg.sprite = _inventoryBgImgReal;
+                }
+                else if (evidence.evidenceType == 'M')
+                {
+                    _bgImg.sprite = _inventoryBgImgMental;
+                }
             }
             else
             {
@@ -170,8 +183,17 @@ public class EvidenceDetailUI : UIBase
                 Destroy(child.gameObject);
             }
         }
+
+        GameObject prefab;
+        if (artResource.artresourceId == "Artresource_0016")
+        {
+            prefab = artResource.GetPrefabFromFilePath(true);
+        }
+        else
+        {
+            prefab = artResource.GetPrefabFromFilePath(false);
+        }
         
-        GameObject prefab = artResource.GetPrefabFromFilePath();
         if (prefab != null)
         {
             Instantiate(prefab, _objectUI.transform);
@@ -193,6 +215,8 @@ public class EvidenceDetailUI : UIBase
         
         for (int page = 0; page < _totalPage; page++)
         {
+            string localInfo = LocalizationSettings.SelectedLocale.Identifier.Code;
+            imgPath = imgPath.Replace("LOCAL",localInfo);
             int lastUnderscoreIndex = imgPath.LastIndexOf('_'); 
             string prefix = imgPath.Substring(0, lastUnderscoreIndex + 1);
             string modifiedString = $"{prefix}{page:D2}";
@@ -502,11 +526,6 @@ public class EvidenceDetailUI : UIBase
                     {
                         resultID = "Event_A024";
                     }
-
-                    if (DataManager.Instance._evidences["Evidence_020"].isAcquired)
-                    {
-                        return;
-                    }
                     
                     await EventManager.Instance.ExecuteEvent(resultID);
                 }
@@ -516,6 +535,7 @@ public class EvidenceDetailUI : UIBase
 
     public void CloseUI()
     {
+        Debug.Log("UI 닫기 버튼 마우스 클릭함");
         UIManager.Instance.CloseTopUI();
     }
 }

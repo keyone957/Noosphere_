@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialName: Inventory
   heightSize: 132
-  tutorialImg: {fileID: 21300000, guid: 9e8df258eb16a274c824beb3529e6ad2, type: 3}
+  tutorialImg: {fileID: 21300000, guid: 13d6bbd866a3931488849b812ffeb470, type: 3}

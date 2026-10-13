@@ -48,13 +48,15 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: -4552935537218006115, guid: fd5a9cb683c5fa74ab1d22b7a04cade7, type: 2}
-    value: {fileID: 0}
   - key: {fileID: -5426997691086380196, guid: fd5a9cb683c5fa74ab1d22b7a04cade7, type: 2}
     value: {fileID: 5265906312851485667}
   - key: {fileID: 409662501323645955, guid: fd5a9cb683c5fa74ab1d22b7a04cade7, type: 2}
     value: {fileID: 0}
   - key: {fileID: -5177169842681671069, guid: fd5a9cb683c5fa74ab1d22b7a04cade7, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2548998886767822816, guid: fd5a9cb683c5fa74ab1d22b7a04cade7, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3157100847280159859, guid: fd5a9cb683c5fa74ab1d22b7a04cade7, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
@@ -76,6 +78,10 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5d82c52da97af6b4a98e0da48d38d63b, type: 2}
     - {fileID: 11400000, guid: 1683f3bbaee4ac545982a7870781d268, type: 2}
     - {fileID: 11400000, guid: fb1767809c11fe5408f8b07b5bbc53cb, type: 2}
+    - {fileID: 11400000, guid: 2beff32a81813cb4480d76be3d617c3b, type: 2}
+    - {fileID: 11400000, guid: bb82fab2dac42634ca879eddd5b2b285, type: 2}
+    - {fileID: 11400000, guid: bf0639ce4033e9a4cb4a87257a7c211c, type: 2}
+    - {fileID: 11400000, guid: 30a6bdbc30c66834d9f9a9fbad6af1da, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -131,6 +137,62 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: IsWalking
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TimeLineSignalManager, Assembly-CSharp
+          m_MethodName: StartFriendNpcAnim
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: sleeping
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TimeLineSignalManager, Assembly-CSharp
+          m_MethodName: StartVfx
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Soundresource_082
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TimeLineSignalManager, Assembly-CSharp
+          m_MethodName: StartRandomSound
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 3
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TimeLineSignalManager, Assembly-CSharp
+          m_MethodName: StopFootSteps
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &2787661988319166489
@@ -212,3 +274,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playableDirector: {fileID: 3369975122255353607}
   _playerParent: {fileID: 0}
+  _angle: -180

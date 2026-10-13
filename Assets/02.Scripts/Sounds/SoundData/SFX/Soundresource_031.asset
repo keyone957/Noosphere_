@@ -15,4 +15,4 @@ MonoBehaviour:
   soundID: Soundresource_031
   soundClip: {fileID: 8300000, guid: 5b05ced32fb0649a480ab66bebd29288, type: 3}
   loopCnt: 1
-  volume: 1
+  volume: 0.7

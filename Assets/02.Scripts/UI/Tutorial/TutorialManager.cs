@@ -1,6 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 using Debug = NooSphere.Debug;
 public class TutorialManager : Singleton<TutorialManager>
@@ -41,7 +43,8 @@ public class TutorialManager : Singleton<TutorialManager>
                 prefab = _prefabHeight217;
             }
 
-            prefab.GetComponent<Image>().sprite = data.tutorialImg;
+            Sprite _sprite = LocalizationSettings.AssetDatabase.GetLocalizedAsset<Sprite>(LocalConstants.ImageAssestTable, data.tutorialName, LocalizationSettings.SelectedLocale);
+            prefab.GetComponent<Image>().sprite = _sprite;
             //자식오브젝트로 생성하기
             Instantiate(prefab, transform);
         }

@@ -66,4 +66,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e4353a690f3c48d495f16f41bf67fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventID: 
+  eventIdList: []
+  _canDestroy: 0
+  _frontAngle: 60
+  npcCameraPoint: {fileID: 0}
+  isNpc: 0

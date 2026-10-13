@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialName: MentalProcess
   heightSize: 132
-  tutorialImg: {fileID: 21300000, guid: 438fb61a7812645f88b986e6ac0e954e, type: 3}
+  tutorialImg: {fileID: 21300000, guid: da7cb792430709947a5072ca5b173982, type: 3}

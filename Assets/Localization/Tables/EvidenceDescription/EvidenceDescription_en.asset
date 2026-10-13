@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: EvidenceDescription_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 174b0bbc6cc98dc42a9c1f036410064e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 16820113408
+    m_Localized: A document containing a research log.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056448
+    m_Localized: A document containing a research log.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056449
+    m_Localized: A pendant holding a beloved family photo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056450
+    m_Localized: A key card with an ID written on it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056451
+    m_Localized: It seems that information about the experiment subjects is written
+      here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056452
+    m_Localized: A letter with something written on it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056453
+    m_Localized: Someone's diary.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056455
+    m_Localized: A photo of the research institute.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056456
+    m_Localized: A note sent to the protagonist.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056457
+    m_Localized: A key card found in the card holder.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056458
+    m_Localized: A key card found in the card holder.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056459
+    m_Localized: A key card found in the card holder.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056460
+    m_Localized: A key card found in the card holder.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056461
+    m_Localized: A carefully written letter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056462
+    m_Localized: A photo of the institute blueprint.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056463
+    m_Localized: Several people are depicted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056464
+    m_Localized: The contents of the contract are written on it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056465
+    m_Localized: A broken mirror shard.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056466
+    m_Localized: A broken mirror shard.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056467
+    m_Localized: A broken mirror shard.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056468
+    m_Localized: A broken mirror shard.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056469
+    m_Localized: A broken mirror shard.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056470
+    m_Localized: A notebook with something written inside in desperation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056471
+    m_Localized: A key to the locker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056472
+    m_Localized: A letter written by the Doctor's daughter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056473
+    m_Localized: The Doctor's notebook.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056474
+    m_Localized: A group photo of the research institute.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056475
+    m_Localized: The protagonist's diary.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16862056476
+    m_Localized: A notebook with something written inside in desperation.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

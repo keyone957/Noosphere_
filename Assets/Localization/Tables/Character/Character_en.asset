@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Character_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: a1cbb1e0bbe3747228379a4f1995a14f, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 16199864803328
+    m_Localized: ' '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132798996480
+    m_Localized: (Me)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132845133824
+    m_Localized: (Dr. Roman)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132845133825
+    m_Localized: (Rai)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132845133826
+    m_Localized: (Daphne)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132849328128
+    m_Localized: (Elise Lane)
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

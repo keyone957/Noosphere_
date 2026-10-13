@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-English (en)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-English (en)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 525a8e38eb8ed8541b2f6605c16ec9ef
+  m_SerializeEntries:
+  - m_GUID: 17d012ef74c37c140b94207bf7853561
+    m_Address: Basic_UI_Tutorial_Ability
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2741a7080b898fe4e99ea5558953199e
+    m_Address: Basic_UI_Tutorial_Daialog_progress
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27f1285150ae34bb5abfae749f3891b9
+    m_Address: UI_Clue_Email_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 49b515c0f62018145ae6fd94ae90c645
+    m_Address: Basic_UI_Tutorial_Inventory
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c6bb0a4d2b197a4992e79154180ce52
+    m_Address: Basic_UI_Tutorial_Move
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e57133e218b1ab438c7373a89e0db74
+    m_Address: Basic_UI_Tutorial_Search
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8eb3222764c44194381e4cd03f9e1d04
+    m_Address: Basic_UI_Tutorial_Exit
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d9a1849446bc406198a537f9e2b0b1b
+    m_Address: UI_Clue_Email_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c37e512c6867ba84d9f269048f03a29a
+    m_Address: Basic_UI_Tutorial_Daialog_Start
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9ac423e5218e498982444136fb71852
+    m_Address: UI_Clue_Email_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e092a94cc82114449be79bba7ca6242c
+    m_Address: Basic_UI_Tutorial_Sub_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0d60566487049d4eab08db7585b8dc2
+    m_Address: Basic_UI_Tutorial_Focus
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 11fd02dd0acddfe438dc6c8a330e6943, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b76767078dfac47428a460320e84182e, type: 2}
+    - {fileID: 11400000, guid: 0f00e314e0ab98e4a9545b37d80dd4d1, type: 2}

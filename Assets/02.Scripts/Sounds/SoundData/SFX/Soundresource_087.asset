@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Soundresource_087
   m_EditorClassIdentifier: 
   soundID: Soundresource_087
-  soundClip: {fileID: 8300000, guid: 70bcb2b54584a430ca40ca9195cad09a, type: 3}
+  soundClip: {fileID: 8300000, guid: 8a9522adc5977419db641ff3aaaf2b0b, type: 3}
   loopCnt: 1
   volume: 1

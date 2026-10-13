@@ -9,6 +9,9 @@ TagManager:
   - EventInteractionTrigger
   - EventMentalEnterTrigger
   - InvestigateObj
+  - playerCameraDirection
+  - TransparentEnvironment
+  - FinalPlayer
   layers:
   - Default
   - TransparentFX
@@ -20,11 +23,11 @@ TagManager:
   - IgnoreMirrorCam
   - IgnoreMirrorCam - wall
   - MirrorOnly - point effect
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - video
+  - NonPixelized
+  - TransparentEnvironment
+  - npc
   - 
   - 
   - 

@@ -1,0 +1,15 @@
+@,,,,,,
+@,,,,,,
+@,,,,,,
+@,,,,,,
+@,,셀에 숫자만 적을때는 숫자 셀의 서식 -> 숫자 ->일반텍스트로 변경해주세요,,,,우선 라디오(정신) 용
+quizId,quizType,questionText,correctAnswer,quizWrong,quizCorrect1,quizCorrect2
+Quiz_001,input,연구원의 이름은 확인했나요?,레이첼 코,Dialogue_0013,Dialogue_0014,
+Quiz_002,ui,카드함UI,Evidence_011,,,
+Quiz_003,ui,비밀번호 : ,0318,Event_B037,Event_B036,
+Quiz_004,ui,라디오 UI(정신),95.7,Event_B047,Event_B046,Event_B055
+Quiz_005,ui,책장 UI,6543210,,Event_B049,
+Quiz_006,ui,깨진 거울 UI,깨진 거울 5개,,Event_B053,
+Quiz_007,ui,라디오 UI(현실),89.1,Event_B061,Event_B056,
+Quiz_008,ui,벽시계 UI,2시5분,,Event_C080,
+Quiz_009,ui,거울 대화,yes,Event_B066,Event_B065,

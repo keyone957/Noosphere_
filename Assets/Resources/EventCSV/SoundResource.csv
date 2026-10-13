@@ -1,0 +1,137 @@
+@,,Resources 폴더 하위에 폴더부터 FilePath에 추가하면 됨. '.png' 같은 확장자 표시 X,,,
+@,,"예를 들어, InventoryEvidenceImg/researchPaperM는 Resources 폴더 하위에 InventoryEvidenceImg 폴더 아래의 researchPaperM.png 파일을 가리키는 것",,,
+@,,"soundresource_Type ---> 브금 :  Bgm, 효과음 : Sound",,,
+@,,,,,
+@,셀에 숫자만 적을때는 숫자 셀의 서식 -> 숫자 ->일반텍스트로 변경해주세요,,,,
+soundresourceId,soundresourceName,soundresourceType,FilePath,loopCount,volume
+Soundresource_001,Amb_CCTV Noise,Sound,Sound/Amb_CCTV Noise,1,1
+Soundresource_002,Ani_Character_Main_Focus,Sound,Sound/Ani_Character_Main_Focus,1,1
+Soundresource_003,Ani_Character_Main_Pulling Lever,Sound,Sound/Ani_Character_Main_Pulling_Lever,1,1
+Soundresource_004,Character_Main_Running Foot Step_1,Sound,Sound/Character_Main_Running_Foot Step_1,1,1
+Soundresource_005,Character_Main_Running_Foot Step_2,Sound,Sound/Character_Main_Running_Foot Step_2,1,1
+Soundresource_006,Character_Main_Running_Foot Step_3,Sound,Sound/Character_Main_Running_Foot Step_3,1,1
+Soundresource_007,Character_Main_Running_Foot Step_4,Sound,Sound/Character_Main_Running_Foot Step_4,1,1
+Soundresource_008,Character_Main_Running_Foot Step_5,Sound,Sound/Character_Main_Running_Foot Step_5,1,1
+Soundresource_009,Ani_Character_Main_Start_Walking_Ani,Sound,Sound/Ani_Character_Main_Start_Walking,1,1
+Soundresource_010,Character_Main_Walk_Foot Step 1,Sound,Sound/Character_Main_Walk_foot Step 1,1,1
+Soundresource_011,Character_Main_Walk_Foot Step 2,Sound,Sound/Character_Main_Walk_foot Step 2,1,1
+Soundresource_012,Character_Main_Walk_Foot Step 3,Sound,Sound/Character_Main_Walk_foot Step 3,1,1
+Soundresource_013,Character_Main_Walk_Foot Step 4,Sound,Sound/Character_Main_Walk_foot Step 4,1,1
+Soundresource_014,Character_Main_Walk_Foot Step 5,Sound,Sound/Character_Main_Walk_foot Step 5,1,1
+Soundresource_015,Character_Main_Walk_Foot Step 6,Sound,Sound/Character_Main_Walk_foot Step 6,1,1
+Soundresource_016,Ani_Character_Main_Working_On_device,Sound,Sound/Ani_Character_Main_Working_On_device,1,1
+Soundresource_017,Amb_Labortory,Sound,Sound/Amb_Labortory,1,1
+Soundresource_018,Ani_Character_Doctor_Head shake,Sound,Sound/Ani_Character_Doctor_Head shake,1,1
+Soundresource_019,Ani_Character_Doctor_Talking,Sound,Sound/Ani_Character_Doctor_Talking,1,1
+Soundresource_020,Character_Doctor_Walk_Foot Step_1,Sound,Sound/Character_Doctor_Walk_Foot Step_1,1,1
+Soundresource_021,Character_Doctor_Walk_Foot Step_2,Sound,Sound/Character_Doctor_Walk_Foot Step_2,1,1
+Soundresource_022,Character_Doctor_Walk_Foot Step_3,Sound,Sound/Character_Doctor_Walk_Foot Step_3,1,1
+Soundresource_023,Character_Doctor_Walk_Foot Step_4,Sound,Sound/Character_Doctor_Walk_Foot Step_4,1,1
+Soundresource_024,Character_Doctor_Walk_Foot Step_5,Sound,Sound/Character_Doctor_Walk_Foot Step_5,1,1
+Soundresource_025,Character_Doctor_Walk_Foot Step_6,Sound,Sound/Character_Doctor_Walk_Foot Step_6,1,1
+Soundresource_026,Character_Main_Talk_Loop,Sound,Sound/Character_Main_Talk_Loop,1,1
+Soundresource_027,Character_Doctor_Talk_Loop,Sound,Sound/Character_Doctor_Talk_Loop,1,1
+Soundresource_028,정신세계_Gaze_End,Sound,Sound/정신세계_Gaze_End,1,1
+Soundresource_029,정신세계_Gaze,Sound,Sound/정신세계_Gaze,1,1
+Soundresource_030,ui_E_button_1,Sound,Sound/ui_E_button_1,1,1
+Soundresource_031,ui_E_button_2,Sound,Sound/ui_E_button_2,1,1
+Soundresource_032,ui_E_button_3,Sound,Sound/ui_E_button_3,1,1
+Soundresource_033,ui_E_button_4,Sound,Sound/ui_E_button_4,1,1
+Soundresource_034,ui_E_button_5,Sound,Sound/ui_E_button_5,1,1
+Soundresource_035,ui_select_button,Sound,Sound/ui_select_button,1,1
+Soundresource_036,ui_Back up_button,Sound,Sound/ui_Back up_button,1,1
+Soundresource_037,ui _Space_button,Sound,Sound/ui_Space_button,1,1
+Soundresource_038,ui_paper_1,Sound,Sound/ui_paper_1,1,1
+Soundresource_039,ui_paper_2,Sound,Sound/ui_paper_2,1,1
+Soundresource_040,ui_paper_3,Sound,Sound/ui_paper_3,1,1
+Soundresource_041,ui_paper_4,Sound,Sound/ui_paper_4,1,1
+Soundresource_042,ui_inventory,Sound,Sound/ui_inventory,1,1
+Soundresource_043,ui_inventory_Select_1,Sound,Sound/ui_inventory_Select_1,1,1
+Soundresource_044,ui_inventory_Select_2,Sound,Sound/ui_inventory_Select_2,1,1
+Soundresource_045,ui_inventory_Select_3,Sound,Sound/ui_inventory_Select_3,1,1
+Soundresource_046,ui_inventory_Select_4,Sound,Sound/ui_inventory_Select_4,1,1
+Soundresource_047,ui_inventory_Select_5,Sound,Sound/ui_inventory_Select_5,1,1
+Soundresource_048,Radio_1,Sound,Sound/Radio_1,1,1
+Soundresource_049,Radio_2,Sound,Sound/Radio_2,1,1
+Soundresource_050,Radio_3,Sound,Sound/Radio_3,1,1
+Soundresource_051,Radio_4,Sound,Sound/Radio_4,1,1
+Soundresource_052,Radio_5,Sound,Sound/Radio_5,1,1
+Soundresource_053,Radio_6,Sound,Sound/Radio_6,1,1
+Soundresource_054,Window_Break,Sound,Sound/Window_Break,1,1
+Soundresource_055,Password_incorrect,Sound,Sound/Password_incorrect,1,1
+Soundresource_056,Start BGM,BGM,BGM/Start_BGM,1,1
+Soundresource_057,book puzzle 1,Sound,Sound/book puzzle 1,1,1
+Soundresource_058,book puzzle 2,Sound,Sound/book puzzle 2,1,1
+Soundresource_059,book puzzle 3,Sound,Sound/book puzzle 3,1,1
+Soundresource_060,book puzzle 4,Sound,Sound/book puzzle 4,1,1
+Soundresource_061,book puzzle 5,Sound,Sound/book puzzle 5,1,1
+Soundresource_062,radio_dial_1(left),Sound,Sound/radio_dial_1(left),1,1
+Soundresource_063,radio_dial_2(middle),Sound,Sound/radio_dial_2(middle),1,1
+Soundresource_064,radio_dial_3(Right),Sound,Sound/radio_dial_3(Right),1,1
+Soundresource_065,glass_Shard_1,Sound,Sound/glass_Shard_1,1,1
+Soundresource_066,glass_Shard_2,Sound,Sound/glass_Shard_2,1,1
+Soundresource_067,glass_Shard_3,Sound,Sound/glass_Shard_3,1,1
+Soundresource_068,glass_Shard_4,Sound,Sound/glass_Shard_4,1,1
+Soundresource_069,glass_Shard_5,Sound,Sound/glass_Shard_5,1,1
+Soundresource_070,inventory_ui_select,Sound,Sound/inventory_ui_select,1,1
+Soundresource_071,radio_on_off_Button,Sound,Sound/radio_on_off_Button,1,1
+Soundresource_072,Prologue_3_BGM,BGM,BGM/Prologue_3_BGM,1,1
+Soundresource_073,Prologue_1_BGM,BGM,BGM/Prologue_1_BGM,1,1
+Soundresource_074,Wall_Clock_Answer_correct,Sound,Sound/Wall_Clock_Answer_correct,1,1
+Soundresource_075,system_talk,Sound,Sound/system_talk,1,1
+Soundresource_076,experiment_talk_loop,Sound,Sound/experiment_talk_loop,1,1
+Soundresource_077,Friend_talk_loop,Sound,Sound/Friend_talk_loop,1,1
+Soundresource_078,Keypad_1,Sound,Sound/Keypad_1,1,1
+Soundresource_079,Keypad_2,Sound,Sound/Keypad_2,1,1
+Soundresource_080,Keypad_3,Sound,Sound/Keypad_3,1,1
+Soundresource_081,Keypad_4,Sound,Sound/Keypad_4,1,1
+Soundresource_082,Door_Open,Sound,Sound/Door_Open,1,1
+Soundresource_083,(All)_Correct_ui,Sound,Sound/(All)_Correct_ui,1,1
+Soundresource_084,(All)_incorrect_ui,Sound,Sound/(All)_incorrect_ui,1,1
+Soundresource_085,BGM_Stage1,BGM,BGM/BGM/Stage1,1,1
+Soundresource_086,lounge_BGM,BGM,BGM/lounge_BGM,1,1
+Soundresource_087,Danger_Start,Sound,Sound/Danger_Start,1,1
+Soundresource_088,Danger_(...)_Start,Sound,Sound/Danger_(...)_Start,1,1
+Soundresource_089,Danger_Amb_Loop,Sound,Sound/Danger_Amb_Loop,1,1
+Soundresource_090,Danger_Fade Out_End,Sound,Sound/Danger_Fade Out_End,1,1
+Soundresource_091,Computer_On,Sound,Sound/Computer_On,1,1
+Soundresource_092,Computer_Off,Sound,Sound/Computer_Off,1,1
+Soundresource_093,Wallclock_Hour_Hand,Sound,Sound/Wallclock_Hour_Hand,1,1
+Soundresource_094,Wallclock_Minute_Hand,Sound,Sound/Wallclock_Minute_Hand,1,1
+Soundresource_095,딸이 주인공 부르는 소리,Sound,,1,1
+Soundresource_096,닥터의 환호,Sound,,1,1
+Soundresource_097,닥터의 절규,Sound,,1,1
+Soundresource_098,Siren,Sound,Sound/Siren,1,1
+Soundresource_099,building collapsing_,Sound,Sound/building collapsing_,1,1
+Soundresource_100,실험체가 주인공을 부르는 소리,Sound,,1,1
+Soundresource_101,Final_Stage_Collapse_BGM_.,BGM,BGM/Final_Stage_Collapse_BGM_.,1,1
+Soundresource_102,Amb_Under Water,BGM,Sound/Under Water,1,1
+Soundresource_103,물속 정신세계_Gaze,Sound,Sound/물속 정신세계_Gaze,1,1
+Soundresource_104,물속 정신세계_Gaze End,Sound,Sound/물속 정신세계_Gaze End,1,1
+Soundresource_105,Final_Stage_Parting_BGM,BGM,BGM/Final_Stage_Collapse_BGM_.,1,1
+Soundresource_106,Clock_Ticking_,Sound,Sound/Clock_Ticking_,1,1
+Soundresource_107,TV_Start,Sound,Sound/TV_Start,1,1
+Soundresource_108,TV_Noise,Sound,Sound/TV_Noise,1,1
+Soundresource_109,Radio,Sound,Sound/Radio,1,1
+Soundresource_110,Intro_컷씬_2,Sound,Sound/Intro_컷씬_2,1,1
+Soundresource_111,Intro_Inhale,Sound,Sound/Intro_Inhale,1,1
+Soundresource_112,정신세계 진입 튕길 때,Sound,Sound/정신세계 진입 튕길 때,1,1
+Soundresource_113,정신세계 진입 실패,Sound,Sound/정신세계 진입 실패,1,1
+Soundresource_114,배드엔딩_쿠장창 넘어지는 소리,Sound,Sound/배드엔딩_쿠장창 넘어지는 소리,1,1
+Soundresource_115,배드엔딩_닥터 걸어오는 소리_2,Sound,Sound/배드엔딩_닥터 걸어오는 소리_2,1,1
+Soundresource_116,Stage_3_Danger,Sound,Sound/Stage_3_Danger,1,1
+Soundresource_117,Underwater_footstep_1,Sound,Sound/Underwater_footstep_1,1,1
+Soundresource_118,Underwater_footstep_2,Sound,Sound/Underwater_footstep_2,1,1
+Soundresource_119,Underwater_footstep_3,Sound,Sound/Underwater_footstep_3,1,1
+Soundresource_120,Underwater_footstep_4,Sound,Sound/Underwater_footstep_4,1,1
+Soundresource_121,doctor_Scream,Sound,Sound/doctor_scream,1,1
+Soundresource_122,electric Spark,Sound,Sound/elecrric Spark,1,1
+Soundresource_123,딸이 구하러옴,BGM,,1,1
+Soundresource_124,기차씬,BGM,BGM/Ending_Train_BGM,1,1
+Soundresource_125,Finalstage_real 씬 브금,BGM,BGM/ending_일반,1,1
+Soundresource_126,Finalstage_spirit 씬 브금,BGM,BGM/Final_Minor,1,1
+Soundresource_127,주인공 일어나는 소리,Sound,wake_sound,1,1
+Soundresource_128,닥터 밀치는 소리,Sound,Push_Sound,1,1
+Soundresource_129,배드 엔딩 BGM 없어진 뒤 씬 효과음,Sound,Bad_Ending,1,1
+Soundresource_130,열차 엔딩 효과음 ,Sound,Train_Ending,1,1
+Soundresource_131,Auto Save,Sound,Auto Save,1,1

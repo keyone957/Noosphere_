@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialName: CharacterMove
   heightSize: 217
-  tutorialImg: {fileID: 21300000, guid: 4d65ce5cfd7d5b64390eedeedf610872, type: 3}
+  tutorialImg: {fileID: 21300000, guid: bb942572782671f47a756dff444d52be, type: 3}

@@ -1,5 +1,6 @@
-using Unity.VisualScripting;
+﻿using Unity.VisualScripting;
 using UnityEngine;
+using Debug = NooSphere.Debug;
 
 public class EventStructure
 {
@@ -17,7 +18,10 @@ public class EventStructure
     public string lockConditionId; //이벤트 실행 시 락되는 조건
     public string locationId;
     public string nextEventId;
-    
+    public bool autoSave;
+    public int autoSaveDelay; // 1 : 문, 2 : N초 딜레이
+    public bool autoSaveComplete; //자동 저장 완료 여부
+
     //이벤트 실행 여부
     public bool isExecuted = false;
     
@@ -60,7 +64,7 @@ public class EventStructure
                 if (PlayerInteract.Instance.isUsingEvidence)
                 {
                     isMet = true;
-                    PlayerInteract.Instance.InitUsingEvidence();
+                    PlayerInteract.Instance.isUsingEvidence = false;
                 }
             }
             else if (canUse == 'N')

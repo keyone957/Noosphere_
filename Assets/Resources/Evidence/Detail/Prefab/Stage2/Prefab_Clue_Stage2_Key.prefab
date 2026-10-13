@@ -123,6 +123,6 @@ MonoBehaviour:
   _scaleSpeed: 0.3
   _minScale: 3
   _maxScale: 5
-  _rotationSpeed: 70
+  _rotationSpeed: 0.5
   parentPanel: {fileID: 0}
   parentCanvas: {fileID: 0}

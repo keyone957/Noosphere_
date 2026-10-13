@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialName: Concentrate
   heightSize: 132
-  tutorialImg: {fileID: 21300000, guid: 3c63ab9c35f004a8399819b07a51ae84, type: 3}
+  tutorialImg: {fileID: 21300000, guid: 9ed929fe2a08cb84db0a3a97fdb8b52e, type: 3}

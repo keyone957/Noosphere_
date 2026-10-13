@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Chinese (Simplified) (zh)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Chinese (Simplified) (zh)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 558ded113d1cfb246a3e7cba9d73ebd3
+  m_SerializeEntries:
+  - m_GUID: 08bce01d793467a4f9f2a6946e6f07af
+    m_Address: Basic_UI_Tutorial_Daialog_Start
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ee7ed3b0e39e4b0880a7faf0e292166
+    m_Address: Basic_UI_Tutorial_Sub_zh
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2084ca3cfd3ca42379b9181337594fbc
+    m_Address: UI_Clue_Email_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3be58984a26cbaa40bbc768da4eebf9c
+    m_Address: Basic_UI_Tutorial_Exit
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5019a1a89fe094f61be69439025135e8
+    m_Address: UI_Clue_Email_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68bee9a57f509894c89177e35507e363
+    m_Address: Basic_UI_Tutorial_Focus
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 77adfc1567cf249b08ba5da482e9c353
+    m_Address: UI_Clue_Email_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a2963a1585e677c41ac769ffed17591f
+    m_Address: Basic_UI_Tutorial_Search
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b87fb1c3f96e75a44900c69ae33e26f3
+    m_Address: Basic_UI_Tutorial_Inventory
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d53b85ae6943df64e96b5c69ad5fc6b8
+    m_Address: Basic_UI_Tutorial_Move
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d7e1869af3008e54d8db8ccc30b8d1a0
+    m_Address: Basic_UI_Tutorial_Daialog_progress
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fba744bbf583f614099554de59d7fe0e
+    m_Address: Basic_UI_Tutorial_Ability
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 11fd02dd0acddfe438dc6c8a330e6943, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 228dc05eda159864ca4e65f4a1b120e3, type: 2}
+    - {fileID: 11400000, guid: c256925e58b6b5b42a5a02872e535a16, type: 2}

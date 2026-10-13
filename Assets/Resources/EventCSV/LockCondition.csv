@@ -1,0 +1,15 @@
+@,
+@,
+@,
+@,
+@,셀에 숫자만 적을때는 숫자 셀의 서식 -> 숫자 ->일반텍스트로 변경해주세요
+lockConditionId,conditionDescription
+Lock_condition_001,캐릭터 움직임 + 모든 물체 및 캐릭터 상호작용
+Lock_condition_002,캐릭터 움직임
+Lock_condition_003,모든 물체 및 캐릭터 상호작용
+Lock_condition_004,정신세계 입장
+Lock_condition_005,현실세계 돌아오기
+Lock_condition_006,상호작용 강제 종료
+Lock_condition_007,현실세계 돌아오기 금지 & 거울 깨짐
+Lock_condition_008,현실세계 돌아오기 금지 & 다이얼로그 실행(스테이지2)
+Lock_condition_009,"좌우 이동 금지, 상하 이동만 가능"

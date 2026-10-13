@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialName: Interaction
   heightSize: 132
-  tutorialImg: {fileID: 21300000, guid: ab58864124469e64bbb76e9b87534110, type: 3}
+  tutorialImg: {fileID: 21300000, guid: fc475de9439265d4da130bba9eead192, type: 3}

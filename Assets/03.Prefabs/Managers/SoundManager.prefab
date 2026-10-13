@@ -52,6 +52,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: eae488c54996540ba847db52f62d63f7, type: 2}
   - {fileID: 11400000, guid: d7164114337284c36934f3c78b9975f1, type: 2}
   - {fileID: 11400000, guid: 924e0d79615a7481dbea296ba1ba89f7, type: 2}
+  - {fileID: 11400000, guid: 77123b8005ed5fd4682c6365e332dbcc, type: 2}
+  - {fileID: 11400000, guid: 9d56d282c2d822a45bc4e60563325aec, type: 2}
+  - {fileID: 11400000, guid: fc552f74a74163d4889501e298f758cf, type: 2}
+  - {fileID: 11400000, guid: 87b0fb67d8370a34bb712457a5c61cb3, type: 2}
+  - {fileID: 11400000, guid: de652799be9044f49a0f7343bf665c05, type: 2}
+  - {fileID: 11400000, guid: fc23db7453932ac4fbb6a468892dd0ec, type: 2}
+  - {fileID: 11400000, guid: 8eb0e9dd268aa5d44bbd2ef33414e698, type: 2}
   _sfxList:
   - {fileID: 11400000, guid: 60e28f65c73e84c5ca94f016f0943d4d, type: 2}
   - {fileID: 11400000, guid: b31a7ff3680f14400870c34650bc792b, type: 2}
@@ -142,9 +149,27 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e9cc1b20eb7d24703b68a0284da9872e, type: 2}
   - {fileID: 11400000, guid: 72b838a323239479dac3ffc65b7062fb, type: 2}
   - {fileID: 11400000, guid: dc1b1fa4491434626acfb5b175f08ac8, type: 2}
+  - {fileID: 11400000, guid: 3c32cd7d188024117bad2882ab84ea70, type: 2}
+  - {fileID: 11400000, guid: 87a7cb74ceff8b04a9287e59328e987f, type: 2}
+  - {fileID: 11400000, guid: 9ce45549cacb1094f9782dd96febc0af, type: 2}
+  - {fileID: 11400000, guid: 6a9c24b8763de6740a84e9498bf4779f, type: 2}
+  - {fileID: 11400000, guid: e39fa416ecfcc824986bfa5c0e43aef8, type: 2}
+  - {fileID: 11400000, guid: ab17cc06353c74f4794df79e175bba35, type: 2}
+  - {fileID: 11400000, guid: 48c99bed027e641c8897d822dd516772, type: 2}
+  - {fileID: 11400000, guid: ef1ab7a674d5c4c61a9b63343dd17c7b, type: 2}
+  - {fileID: 11400000, guid: 87d0e87199491419ab39dd9dc103be29, type: 2}
+  - {fileID: 11400000, guid: 6fbb0e96d95b0e54998ebcef28622cc6, type: 2}
+  - {fileID: 11400000, guid: cf93ae9a5be1015408ea2bb56b39ff01, type: 2}
+  - {fileID: 11400000, guid: cc93701c9de4a284899200a327626b61, type: 2}
+  - {fileID: 11400000, guid: 8d28a9afd824a3d41b28845cbe373019, type: 2}
+  - {fileID: 11400000, guid: a979b099e644d2f42b6fd48bec32f4d4, type: 2}
+  - {fileID: 11400000, guid: 0b2a15b102d587e40a1442342e8ece87, type: 2}
+  _SFXGroup: {fileID: 0}
   _bgmSource: {fileID: 4946430289767459495}
   _sfxSources: []
   _maxSFXPoolSize: 10
+  sfxVolume: 0
+  bgmVolume: 0
 --- !u!82 &4946430289767459495
 AudioSource:
   m_ObjectHideFlags: 0
@@ -154,9 +179,10 @@ AudioSource:
   m_GameObject: {fileID: 1517879425116300656}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 996399281446480435, guid: 27a4dd94ae156420cb834d33fa1e8e9e,
+    type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1

@@ -1,10 +1,8 @@
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
+using Debug = NooSphere.Debug;
 
 public class UIManager : Singleton<UIManager>
 {
@@ -17,6 +15,9 @@ public class UIManager : Singleton<UIManager>
     public UIBase inventoryUI;
     public UIBase dialogueUI;
     public UIBase inputFieldUI;
+    public UIBase mirrorDialogueUI;
+    public GameObject cctvFrame;
+    public GameObject keyGuideUI;
     
     public GameObject inventoryIcon;
     
@@ -24,13 +25,85 @@ public class UIManager : Singleton<UIManager>
     
     public Action OnSelectEnd;
     public bool isYesClicked = false;
+    public List<string> excludedOptionScenes = new List<string>();
+
     private void Update()
     {
-        // ESC 버튼 입력 처리
-        if (Input.GetKeyDown(KeyCode.Escape))
+        foreach (string sceneName in excludedOptionScenes)
         {
-            if(IsUIOpen(dialogueUI)) return;
+            if (SceneManager.GetActiveScene().name == sceneName)
+            {
+                return; // 현재 씬이 제외된 씬 중 하나라면 UI를 열지 않음
+            }
+        }
+
+        // ESC 버튼 입력 처리
+        if (InputRouter.Instance.ConsumeEscape())
+        {
+            if (IsUIOpen(dialogueUI) || IsUIOpen(investigateUI) || IsUIOpen(mirrorDialogueUI))
+            {
+                return;
+            }
+
+            if (FindObjectOfType<MirrorDialogueManager>() != null)
+            {
+                if(FindObjectOfType<MirrorDialogueManager>().IsTopUI()) return;
+            }
+
+            if (!IsAnyUIOpen() && !DefaultUIController.Instance.IsAnyUIOpen() && PlayerInteract.Instance.canInteract)
+            {
+                CannotOpenOptionUI exception = FindObjectOfType<CannotOpenOptionUI>();
+                if (exception != null) return;
+                Debug.Log("Escape key pressed, opening resume UI");
+                DefaultUIController.Instance.OpenUI(DefaultUIController.Instance.inGameOptionUI);
+                return;
+            }
             CloseTopUI();
+        }
+        
+        if (FindObjectOfType<MirrorDialogueManager>() != null)
+        {
+            if (FindObjectOfType<MirrorDialogueManager>().IsTopUI())
+            {
+                cctvFrame.SetActive(true);
+            }
+        }
+
+
+        if (DataManager.Instance._events.ContainsKey("Event_A031"))
+        {
+            if (DataManager.Instance._events["Event_A031"].isExecuted)
+            {
+                keyGuideUI.SetActive(false);
+            }
+            else
+            {
+                if(keyGuideUI != null)
+                    keyGuideUI.SetActive(true);
+            }
+        }
+
+        if (dialogueUI != null && dialogueUI.IsTopUI())
+        {
+            // 책장에서 거울 조각 습득 시 cctv frame
+            if (EventManager.Instance.currentEventID == "Event_B044" &&
+                DialogueManager.Instance.GetCurDialogueId() == "Dialogue_0065")
+            {
+                cctvFrame.SetActive(true);
+            }
+            
+            if (EventManager.Instance.currentEventID == "Event_B065" &&
+                DialogueManager.Instance.GetCurDialogueId() == "Dialogue_0031")
+            {
+                cctvFrame.SetActive(true);
+            }
+            
+            if (EventManager.Instance.currentEventID == "Event_B066" &&
+                DialogueManager.Instance.GetCurDialogueId() == "Dialogue_0032")
+            {
+                cctvFrame.SetActive(true);
+            }
+            
         }
         
         if (IsAnyUIOpen())
@@ -42,27 +115,49 @@ public class UIManager : Singleton<UIManager>
         }
         else
         {
-            //인벤토리 아이콘 활성화
-            inventoryIcon.SetActive(true);
+
+            if(FindObjectOfType<PlayerInteract>() != null && FindAnyObjectByType<InventoryManager>() != null)
+            {
+                if (FindObjectOfType<PlayerInteract>().GetComponent<MentalEnterProcess>().IsEnterNow() || InventoryManager.Instance.canOpenInventory)
+                {
+                    inventoryIcon.SetActive(false);
+                    keyGuideUI.SetActive(false);
+                    return;
+                }
+            }
+            
+
+            if (FindObjectOfType<HintImage>() == null)
+            {
+                //인벤토리 아이콘 활성화
+                if(inventoryIcon != null)
+                    inventoryIcon.SetActive(true);
+            }
         }
     }
     
     public void OpenUI(UIBase ui)
     {
         if (ui == null) return;
+        if (DefaultUIController.Instance.IsAnyUIOpen()) return;
 
         // 스택에 추가하고 UI를 활성화
         // 상호작용 금지
         LockPlayer();
         uiStack.Push(ui);
         topUI = ui;
+        if (IsUIOpen(dialogueUI) || IsUIOpen(mirrorDialogueUI))
+        {
+            EscapeUI.Instance.DisActive();
+        }
         ui.OnOpen();
     }
 
     public void OpenUI(UIBase ui, EvidenceStructure evidence)
     {
         if (ui == null) return;
-        
+        if (DefaultUIController.Instance.IsAnyUIOpen()) return;
+
         if (evidence == null)
         {
             return;
@@ -73,7 +168,6 @@ public class UIManager : Singleton<UIManager>
             //증거물 상세보기가 열려있는 경우, 조사 UI는 열려도, 위에 보이지 않기 때문에
             CloseTopUI();
         }
-        
         
         // 스택에 추가하고 UI를 활성화
         // 상호작용 금지
@@ -86,7 +180,8 @@ public class UIManager : Singleton<UIManager>
     public void OpenUI(UIBase ui, string quizID)
     {
         if (ui == null) return;
-        
+        if (DefaultUIController.Instance.IsAnyUIOpen()) return;
+
         if (string.IsNullOrEmpty(quizID) || !DataManager.Instance._quiz.ContainsKey(quizID))
         {
             return;
@@ -97,6 +192,20 @@ public class UIManager : Singleton<UIManager>
         uiStack.Push(ui);
         topUI = ui;
         ui.OnOpen(quizID);
+        if (quizID == "Quiz_007" && DataManager.Instance._quiz["Quiz_007"].isSolved)
+        {
+            return;
+        }
+        if (quizID == "Quiz_004" && DataManager.Instance._quiz["Quiz_004"].isSolved)
+        {
+            return;
+        }
+        cctvFrame.SetActive(false);
+        if(dialogueUI.IsTopUI()) return;
+        if (FindObjectOfType<MirrorDialogueManager>() != null)
+        {
+            if(FindObjectOfType<MirrorDialogueManager>().IsTopUI()) return;
+        }
         EscapeUI.Instance.Active();
     }
     public void CloseTopUI()
@@ -153,14 +262,14 @@ public class UIManager : Singleton<UIManager>
     {
         PlayerController.Instance.canMove = false;
         PlayerInteract.Instance.canInteract = false;
-        PlayerInteract.Instance.HideInteractionMark();
+        //PlayerInteract.Instance.HideInteractionMark();
     }
 
     public void LockInteraction()
     {
         Debug.LogWarning("LockInteraction 실행");
         PlayerInteract.Instance.canInteract = false;
-        PlayerInteract.Instance.HideInteractionMark();
+        //PlayerInteract.Instance.HideInteractionMark();
     }
 
     public void UnLockPlayer()

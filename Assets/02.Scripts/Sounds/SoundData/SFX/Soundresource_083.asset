@@ -14,5 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundID: Soundresource_083
   soundClip: {fileID: 8300000, guid: 4775bc0bcd403419a8db8a086e4bdaa4, type: 3}
+  bypassEffects: 0
+  bypassListenerEffects: 0
+  bypassReverbZones: 0
   loopCnt: 1
-  volume: 1
+  volume: 0.6
+  priority: 128
+  pitch: 1
+  stereoPan: 0
+  spatialBlend: 0
+  reverbZoneMix: 1
+  dopplerLevel: 1
+  spread: 0
+  volumeRolloff: 0
+  minDistance: 1
+  maxDistance: 500

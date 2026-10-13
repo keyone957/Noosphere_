@@ -9,6 +9,7 @@ public class DialogueStructure
     {
         public string text;
         public string tutorialID;
+        public string characterId;
     }
     
     public string dialogueId;

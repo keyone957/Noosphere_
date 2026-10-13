@@ -1,10 +1,11 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization.Settings;
+using UnityEngine.UI;
 
 public class InvestigateUI : UIBase
 {
@@ -35,7 +36,6 @@ public class InvestigateUI : UIBase
     public override void OnClose()
     {
         base.OnClose();
-        UIManager.Instance.OnSelectEnd?.Invoke();
         transform.GetChild(0).gameObject.SetActive(false);
     }
 
@@ -43,21 +43,21 @@ public class InvestigateUI : UIBase
     {
         base.HandleKeyboardInput();
         //키보드 A - YES 버튼
-        if (Input.GetKeyDown(KeyCode.A))
+        if (InputRouter.Instance.ConsumeA())
         {
             SoundManager.Instance.PlaySFX("Soundresource_035");
             HoverYesBtn();
         }
 
         //키보드 D - NO 버튼
-        if (Input.GetKeyDown(KeyCode.D))
+        if (InputRouter.Instance.ConsumeD())
         { 
             SoundManager.Instance.PlaySFX("Soundresource_035");
             HoverNoBtn();
         }
 
         //스페이스 - 버튼 선택
-        if (_curSelectedBtn != null && Input.GetKeyDown(KeyCode.Space))
+        if (_curSelectedBtn != null && InputRouter.Instance.ConsumeSpace())
         {
             SoundManager.Instance.PlaySFX("Soundresource_037");
             if (_curSelectedBtn == _yesBtn)
@@ -69,27 +69,29 @@ public class InvestigateUI : UIBase
                 ClickNoBtn();
             }
         }
-            
+
+        /*
         //ESC - NO 선택
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (InputRouter.Instance.ConsumeEscape())
         {
             SoundManager.Instance.PlaySFX("Soundresource_036");
             //NO 버튼 선택
             ClickNoBtn();
         }
+        */
     }
-    
+
     public void HoverYesBtn()
     {
-        SetButtonSelected(_yesBtn, UnityExtension.HexColor(GreenColor));
-        SetButtonSelected(_noBtn, UnityExtension.HexColor(WhiteColor));
+        SetImgSelected(_yesBtn, UnityExtension.HexColor(SkyblueColor));
+        SetImgSelected(_noBtn, UnityExtension.HexColor(WhiteColor));
         _curSelectedBtn = _yesBtn;
     }
 
     public void HoverNoBtn()
     {
-        SetButtonSelected(_noBtn,UnityExtension.HexColor(GreenColor));
-        SetButtonSelected(_yesBtn,UnityExtension.HexColor(WhiteColor));
+        SetImgSelected(_noBtn,UnityExtension.HexColor(SkyblueColor));
+        SetImgSelected(_yesBtn,UnityExtension.HexColor(WhiteColor));
         _curSelectedBtn = _noBtn;
     }
 
@@ -120,15 +122,15 @@ public class InvestigateUI : UIBase
     //증거물 조사 UI의 정보 세팅하기
     public void SetInvestigateUI(EvidenceStructure evidence)
     {
-        _evidenceName.text = evidence.evidenceName;
-        _evidenceDescription.text = evidence.evidenceTextDisplay;
-        
+        _evidenceName.text = LocalizationSettings.StringDatabase.GetLocalizedString(LocalConstants.EvidenceNameTable, evidence.evidenceName, LocalizationSettings.SelectedLocale);
+        _evidenceDescription.text = LocalizationSettings.StringDatabase.GetLocalizedString(LocalConstants.EvidenceContentTable, evidence.evidenceTextDisplay, LocalizationSettings.SelectedLocale);
+
         //아트 리소스 불러오기
         if (DataManager.Instance._artResources.ContainsKey(evidence.artresourceId))
         {
             //아트 리소스 내 증거물 인벤토리 이미지 가져오기
             ArtResourceStructure artResource = DataManager.Instance._artResources[evidence.artresourceId];
-            _evidenceImage.sprite = artResource.GetSpriteFromFilePath(artResource.filePathInventoryThumbnail);
+            _evidenceImage.sprite = artResource.GetSpriteFromFilePath(artResource.filePathInventoryDetail);
         }
         else
         {

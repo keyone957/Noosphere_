@@ -1,8 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
+using UnityEngine.UI;
+using Debug = NooSphere.Debug;
 
 public class UIBase : MonoBehaviour
 {
@@ -11,6 +11,8 @@ public class UIBase : MonoBehaviour
     protected static readonly string BlackColor = "#000000";
     protected static readonly string GrayColor = "#7B7B7B";
     protected static readonly string RedColor = "#FF0000";
+    protected static readonly string SkyblueColor = "#92FFFF";
+    protected static readonly string PinkColor = "#F56CB4";
     
     public UnityEvent OnClickEvent;
     public UnityEvent OnHoverEvent;
@@ -73,6 +75,12 @@ public class UIBase : MonoBehaviour
     {
         TextMeshProUGUI tmp = btn.GetComponent<TextMeshProUGUI>();
         tmp.color = color;
+    }
+
+    public void SetImgSelected(GameObject btn, Color color)
+    {
+        Image img = btn.GetComponent<Image>();
+        img.color = color;
     }
     
     public void AddOnClickListener(UnityAction action)

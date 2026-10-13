@@ -74,6 +74,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: fb1767809c11fe5408f8b07b5bbc53cb, type: 2}
     - {fileID: 11400000, guid: 58514700c12e5fc4892470cc94982526, type: 2}
     - {fileID: 11400000, guid: 5d82c52da97af6b4a98e0da48d38d63b, type: 2}
+    - {fileID: 11400000, guid: bf0639ce4033e9a4cb4a87257a7c211c, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -131,6 +132,20 @@ MonoBehaviour:
             m_StringArgument: IsWalk
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TimeLineSignalManager, Assembly-CSharp
+          m_MethodName: StartRandomSound
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 3.5
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &3870401928200869685
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playableDirector: {fileID: 9134802071459118682}
   _playerParent: {fileID: 0}
+  _angle: -180
 --- !u!1 &4058710345445172961
 GameObject:
   m_ObjectHideFlags: 0
